@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>عبدالله مراد هائل | مهندس تقنية معلومات ومطور Full-Stack</title>
+<meta name="description" content="عبدالله مراد هائل محمد — مهندس تقنية معلومات ومطور Full-Stack في الرياض. أبني أنظمة مؤسسية وتطبيقات ويب، وأدير البنية التحتية والشبكات وأنظمة المراقبة.">
+<meta property="og:title" content="عبدالله مراد هائل | مهندس تقنية معلومات ومطور Full-Stack">
+<meta property="og:description" content="أبني أنظمة مؤسسية وتطبيقات ويب من الفكرة حتى النشر.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#fbfaf8; --surface:#ffffff; --border:#e6e2dc; --text:#1c1a17;
+  --muted:#6b655c; --accent:#1a7f5a; --accent-soft:#e8f3ee; --shadow:rgba(28,26,23,.06);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#14130f; --surface:#1c1a17; --border:#2e2b26; --text:#f0ede8;
+    --muted:#9a938a; --accent:#4db892; --accent-soft:#1a2f27; --shadow:rgba(0,0,0,.3);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#14130f; --surface:#1c1a17; --border:#2e2b26; --text:#f0ede8;
+  --muted:#9a938a; --accent:#4db892; --accent-soft:#1a2f27; --shadow:rgba(0,0,0,.3);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{
+  font-family:"IBM Plex Sans Arabic",system-ui,-apple-system,"Segoe UI",sans-serif;
+  background:var(--bg); color:var(--text); line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:920px;margin:0 auto;padding:0 24px}
+a{color:var(--accent);text-decoration:none}
+a:hover{text-decoration:underline}
+
+header{padding:80px 0 56px;border-bottom:1px solid var(--border)}
+.eyebrow{color:var(--accent);font-weight:600;font-size:.9rem;letter-spacing:.02em;margin-bottom:12px}
+h1{font-size:clamp(2rem,5vw,3rem);font-weight:700;line-height:1.25;letter-spacing:-.02em}
+.role{font-size:clamp(1.05rem,2.5vw,1.3rem);color:var(--muted);margin-top:10px;font-weight:500}
+.lede{margin-top:24px;font-size:1.05rem;max-width:62ch;color:var(--text)}
+.lede + .lede{margin-top:14px;color:var(--muted)}
+.links{display:flex;flex-wrap:wrap;gap:10px;margin-top:32px}
+.btn{
+  display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:8px;
+  border:1px solid var(--border);background:var(--surface);color:var(--text);
+  font-weight:500;font-size:.95rem;transition:border-color .15s,transform .15s;
+}
+.btn:hover{border-color:var(--accent);text-decoration:none;transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:#fff;border-color:var(--accent)}
+.btn.primary:hover{opacity:.9}
+
+section{padding:56px 0;border-bottom:1px solid var(--border)}
+section:last-of-type{border-bottom:none}
+h2{font-size:1.5rem;font-weight:700;margin-bottom:8px;letter-spacing:-.01em}
+.sub{color:var(--muted);margin-bottom:28px;font-size:.98rem}
+
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px}
+.card{
+  background:var(--surface);border:1px solid var(--border);border-radius:12px;
+  padding:22px;transition:border-color .15s,box-shadow .15s;
+}
+.card:hover{border-color:var(--accent);box-shadow:0 4px 16px var(--shadow)}
+.card h3{font-size:1.1rem;font-weight:600;margin-bottom:6px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.badge{
+  font-size:.72rem;font-weight:600;padding:3px 9px;border-radius:99px;
+  background:var(--accent-soft);color:var(--accent);white-space:nowrap;
+}
+.card p{color:var(--muted);font-size:.94rem;margin-bottom:14px}
+.tags{display:flex;flex-wrap:wrap;gap:6px}
+.tag{
+  font-size:.75rem;padding:3px 9px;border-radius:6px;
+  background:var(--bg);border:1px solid var(--border);color:var(--muted);
+}
+
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.skill h4{font-size:.85rem;font-weight:600;color:var(--accent);margin-bottom:10px;letter-spacing:.02em}
+.skill p{font-size:.92rem;color:var(--muted);line-height:1.9}
+
+.exp{border-right:2px solid var(--border);padding-right:22px;margin-bottom:26px}
+.exp:last-child{margin-bottom:0}
+.exp h3{font-size:1.05rem;font-weight:600}
+.exp .meta{color:var(--accent);font-size:.88rem;font-weight:500;margin:2px 0 8px}
+.exp p{color:var(--muted);font-size:.94rem}
+
+.certs{list-style:none;display:grid;gap:10px}
+.certs li{
+  background:var(--surface);border:1px solid var(--border);border-radius:8px;
+  padding:14px 18px;font-size:.95rem;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;
+}
+.certs .year{color:var(--muted);font-size:.88rem;white-space:nowrap}
+
+footer{padding:48px 0 64px;text-align:center;color:var(--muted);font-size:.92rem}
+footer strong{color:var(--text);display:block;font-size:1.05rem;margin-bottom:6px}
+
+.theme-toggle{
+  position:fixed;top:20px;left:20px;
+  width:40px;height:40px;border-radius:8px;cursor:pointer;
+  background:var(--surface);border:1px solid var(--border);color:var(--text);
+  font-size:1.1rem;display:grid;place-items:center;z-index:10;
+}
+.theme-toggle:hover{border-color:var(--accent)}
+@media(max-width:600px){
+  header{padding:64px 0 44px}
+  section{padding:44px 0}
+}
+</style>
+</head>
+<body>
+
+<button class="theme-toggle" id="tt" aria-label="تبديل الوضع الليلي">&#9686;</button>
+
+<div class="wrap">
+
+<header>
+  <div class="eyebrow">الرياض، المملكة العربية السعودية</div>
+  <h1>عبدالله مراد هائل محمد</h1>
+  <div class="role">مهندس تقنية معلومات · مطور Full-Stack · أخصائي دعم فني</div>
+  <p class="lede">
+    أبني أنظمة مؤسسية وتطبيقات ويب من الفكرة حتى النشر، وأجمع بين خبرة ميدانية في
+    البنية التحتية والشبكات وأنظمة المراقبة، وبين تطوير البرمجيات.
+  </p>
+  <p class="lede">
+    خبرتي الميدانية تخدم كودي: حين تدير الدعم الفني لأحد عشر فرعاً، تتعلم أن النظام
+    الذي لا يُصان ولا يُراقب ولا يُوثَّق — نظام لم يكتمل بعد.
+  </p>
+  <div class="links">
+    <a class="btn primary" href="mailto:abdullahmuradbus@gmail.com">راسلني</a>
+    <a class="btn" href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420" target="_blank" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/AbdullahMurad73" target="_blank" rel="noopener">GitHub</a>
+    <a class="btn" href="tel:+966538093956">+966 53 809 3956</a>
+  </div>
+</header>
+
+<section>
+  <h2>المشاريع</h2>
+  <p class="sub">مختارات مما بنيته — من أنظمة تجارية إلى رؤية حاسوبية.</p>
+  <div class="grid">
+
+    <div class="card">
+      <h3>روبوت الاستقبال الذكي <span class="badge">المركز الأول</span></h3>
+      <p>روبوت استقبال ذكي يدمج العتاد بالبرمجيات. قدت فريقاً من 12 عضواً وأدرت الميزانية، وحصد المشروع المركز الأول على مستوى مشاريع التخرج.</p>
+      <div class="tags"><span class="tag">Python</span><span class="tag">IoT</span><span class="tag">دمج عتاد وبرمجيات</span><span class="tag">قيادة فريق</span></div>
+    </div>
+
+    <div class="card">
+      <h3>متجر الضيافة</h3>
+      <p>منصة تجارة إلكترونية Headless كاملة: ست إضافات مخصصة (عروض أسعار، سعة حجز، جدولة مطبخ، تقارير مبيعات)، مع تطبيق PWA يعمل دون اتصال ويدعم لغتين.</p>
+      <div class="tags"><span class="tag">Vendure</span><span class="tag">Next.js 16</span><span class="tag">PostgreSQL</span><span class="tag">PWA</span><span class="tag">GraphQL</span></div>
+    </div>
+
+    <div class="card">
+      <h3>عقارX</h3>
+      <p>منصة عقارات متكاملة: مصادقة عبر OTP، إدارة العقارات ورفع الصور، نشر الإعلانات والبحث الجغرافي، المفضلة، ولوحة مراجعة إدارية.</p>
+      <div class="tags"><span class="tag">NestJS</span><span class="tag">TypeORM</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">Docker</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Abdullah AI</h3>
+      <p>وكيل تنفيذي شخصي بمعمارية إنتاجية: Orchestrator حقيقي، ذاكرة مصنّفة، بوابة موافقة بشرية قبل أي عملية حساسة، وسجل تدقيق كامل — خلف واجهة واحدة تدعم عدة مزودي ذكاء اصطناعي.</p>
+      <div class="tags"><span class="tag">NestJS</span><span class="tag">Multi-Provider AI</span><span class="tag">TypeORM</span></div>
+    </div>
+
+    <div class="card">
+      <h3>ميدان</h3>
+      <p>نظام استجابة ميدانية لحظي يربط غرفة التحكم بمراقبي لجان الاختبارات عبر قناة موثّقة واحدة — بدل الهاتف والورق.</p>
+      <div class="tags"><span class="tag">React 19</span><span class="tag">Express 5</span><span class="tag">Socket.io</span><span class="tag">JWT</span></div>
+    </div>
+
+    <div class="card">
+      <h3>Focus Guard</h3>
+      <p>رؤية حاسوبية تراقب التركيز عبر الكاميرا: تكشف التشتت وإغلاق العينين بتحليل معالم الوجه ونسبة انفتاح العين، مع تثبيت الحالة لتفادي الإنذارات الكاذبة.</p>
+      <div class="tags"><span class="tag">OpenCV</span><span class="tag">MediaPipe</span><span class="tag">YOLOv8</span><span class="tag">Python</span></div>
+    </div>
+
+    <div class="card">
+      <h3>أتمتة بيانات الفروع</h3>
+      <p>توحيد وتنظيف بيانات أحد عشر فرعاً عبر Power Query، وبناء لوحات مبيعات تفاعلية في Power BI حوّلت التقارير اليدوية إلى تحديث آلي.</p>
+      <div class="tags"><span class="tag">Power BI</span><span class="tag">Power Query</span><span class="tag">DAX</span><span class="tag">VBA</span></div>
+    </div>
+
+  </div>
+</section>
+
+<section>
+  <h2>الخبرات</h2>
+  <div class="exp">
+    <h3>مطور برمجيات متكامل — عمل حر</h3>
+    <div class="meta">2022 – حتى الآن</div>
+    <p>تطوير تطبيقات ويب وأنظمة إدارية حسب متطلبات العملاء، وبناء REST APIs، وتصميم قواعد البيانات، ودعم ما بعد التسليم.</p>
+  </div>
+  <div class="exp">
+    <h3>دعم فني وإدارة أنظمة — شركة معسلات، الدمام</h3>
+    <div class="meta">2026</div>
+    <p>الدعم التقني لأكثر من 11 فرعاً: أنظمة نقاط البيع، كاميرات المراقبة، شبكات الفروع، وإدارة تذاكر الدعم.</p>
+  </div>
+  <div class="exp">
+    <h3>دعم فني وتقنية معلومات — تقنية ناصر، القصيم</h3>
+    <div class="meta">2026</div>
+    <p>الدعم الفني عن بُعد وحضورياً، تشخيص الأعطال، النسخ الاحتياطي واستعادة البيانات، وإعداد الشبكات.</p>
+  </div>
+  <div class="exp">
+    <h3>دعم فني وتدريب تقني — شركة بيت هائل سعيد أنعم</h3>
+    <div class="meta">2025 – 2026</div>
+    <p>الدعم الفني للموظفين، تركيب أنظمة البصمة والكاميرات، وإدارة المستخدمين والصلاحيات عبر Active Directory.</p>
+  </div>
+</section>
+
+<section>
+  <h2>المهارات</h2>
+  <div class="skills">
+    <div class="skill">
+      <h4>التطوير</h4>
+      <p>JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</p>
+    </div>
+    <div class="skill">
+      <h4>قواعد البيانات والبنية</h4>
+      <p>PostgreSQL · MySQL · SQL Server · MongoDB · Redis · Firebase · Docker · Git &amp; GitHub</p>
+    </div>
+    <div class="skill">
+      <h4>تقنية المعلومات</h4>
+      <p>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</p>
+    </div>
+    <div class="skill">
+      <h4>الشبكات والمراقبة</h4>
+      <p>LAN / WAN · TCP/IP · Routers &amp; Switches · CCTV (Hikvision · Dahua) · iVMS-4200 · أنظمة البصمة</p>
+    </div>
+    <div class="skill">
+      <h4>تحليل البيانات</h4>
+      <p>Power BI · Power Query · DAX · Advanced Excel · VBA</p>
+    </div>
+    <div class="skill">
+      <h4>اللغات</h4>
+      <p>العربية — اللغة الأم<br>الإنجليزية — مستوى جيد</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>التعليم والشهادات</h2>
+  <ul class="certs">
+    <li><span><strong>بكالوريوس تقنية معلومات</strong> — الجامعة الوطنية، تعز</span><span class="year">2021 – 2024</span></li>
+    <li><span>Google Project Management — Professional Certificate, Coursera</span><span class="year">2025</span></li>
+    <li><span>Google Digital Marketing &amp; E-commerce</span><span class="year">2025</span></li>
+    <li><span>Crash Course on Python</span><span class="year">2025</span></li>
+    <li><span>دورة عملي شبكات — 70 ساعة، بتقدير 96%</span><span class="year">2024</span></li>
+    <li><span>CCTV Systems Engineer — أنظمة IP و Analog متعددة العلامات</span><span class="year">—</span></li>
+  </ul>
+</section>
+
+<footer>
+  <strong>مفتوح للفرص</strong>
+  تطوير البرمجيات · تقنية المعلومات · الدعم الفني<br>
+  <a href="mailto:abdullahmuradbus@gmail.com">abdullahmuradbus@gmail.com</a> · <a href="tel:+966538093956">+966 53 809 3956</a>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var btn=document.getElementById("tt");
+  var saved=null;
+  try{saved=localStorage.getItem("theme");}catch(e){}
+  if(saved){document.documentElement.setAttribute("data-theme",saved);}
+  btn.addEventListener("click",function(){
+    var cur=document.documentElement.getAttribute("data-theme");
+    var next;
+    if(cur==="dark"){next="light";}
+    else if(cur==="light"){next="dark";}
+    else{
+      next=window.matchMedia("(prefers-color-scheme: dark)").matches?"light":"dark";
+    }
+    document.documentElement.setAttribute("data-theme",next);
+    try{localStorage.setItem("theme",next);}catch(e){}
+  });
+})();
+</script>
+
+</body>
+</html>
