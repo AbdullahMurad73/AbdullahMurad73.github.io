@@ -88,7 +88,7 @@ h2{
 
 /* ===== الطباعة ===== */
 /* ═══ الطباعة — الهوامش على @page لتتكرر في كل صفحة ═══ */
-@page{ size:A4; margin:1.4cm 1.5cm; }
+@page{ size:A4; margin:1.05cm 1.15cm; }
 
 @media print{
   body{ background:#fff; }
@@ -116,6 +116,36 @@ h2{
 
   /* ضمان طباعة الألوان والخلفيات */
   *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+
+  /* ═══ ضغط لصفحتين ═══
+     الأحجام بوحدة rem، فتصغير الجذر يقلّصها كلها بنسبة واحدة
+     ويحافظ على التناسب بين العناوين والنصوص. */
+  html{ font-size:13px; }
+  body{ line-height:1.42; }
+
+  .hdr{ padding-bottom:9px; margin-bottom:11px; border-bottom-width:2px; }
+  .hdr h1{ font-size:1.55rem; }
+  .hdr .title{ font-size:.95rem; margin-top:2px; }
+  .contact{ margin-top:6px; gap:2px 12px; font-size:.79rem; }
+
+  h2{ margin:11px 0 5px; padding-bottom:2px; font-size:.83rem; }
+  .summary{ font-size:.86rem; line-height:1.5; }
+
+  .job{ margin-bottom:7px; }
+  .job ul{ margin-top:2px; padding-inline-start:15px; }
+  .job li{ font-size:.815rem; line-height:1.42; margin-bottom:0; }
+  .job h3{ font-size:.9rem; }
+  .job .org{ font-size:.82rem; }
+
+  .proj{ margin-bottom:6px; }
+  .proj h3{ font-size:.88rem; }
+  .proj p{ font-size:.815rem; line-height:1.42; margin-top:1px; }
+  .proj .tech{ font-size:.76rem; margin-top:1px; }
+
+  .sk{ gap:2px 10px; font-size:.815rem; }
+  .sk dd{ line-height:1.42; }
+
+  .cert{ font-size:.815rem; margin-bottom:2px; }
 }
 @media(max-width:800px){
   .page{padding:1.2cm 1cm;margin:12px auto}
