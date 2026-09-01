@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="السيرة الذاتية — عبدالله مراد هائل محمد · مهندس تقنية معلومات ومطور Full-Stack">
+<meta name="robots" content="noindex">
+<title>السيرة الذاتية — عبدالله مراد هائل محمد</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16181d; --muted:#5a6070; --line:#d8dce4; --accent:#0f5c8c;
+  --soft:#eef4f9; --page:#ffffff; --bg:#e9ecf1;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+body.en{direction:ltr;font-family:"IBM Plex Sans",system-ui,sans-serif}
+body.en .page{direction:ltr;text-align:left}
+
+/* ===== شريط التحكم (لا يُطبع) ===== */
+.bar{
+  position:sticky;top:0;z-index:50;background:#16181d;color:#fff;
+  padding:12px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;
+  box-shadow:0 2px 12px rgba(0,0,0,.18);
+}
+.bar .grp{display:flex;gap:6px;align-items:center}
+.bar label{font-size:.78rem;opacity:.65;margin-inline-end:4px;font-family:"IBM Plex Sans Arabic",sans-serif}
+.bar button{
+  background:#2a2e38;color:#fff;border:1px solid #3c414d;padding:7px 15px;
+  border-radius:6px;cursor:pointer;font-size:.85rem;font-family:"IBM Plex Sans Arabic",sans-serif;
+}
+.bar button:hover{background:#3c414d}
+.bar button.on{background:#2a8fd4;border-color:#2a8fd4;font-weight:600}
+.bar .print{background:#1a9a63;border-color:#1a9a63;font-weight:600;margin-inline-start:auto}
+.bar .print:hover{background:#22b374}
+.hint{font-size:.76rem;opacity:.6;width:100%;font-family:"IBM Plex Sans Arabic",sans-serif;direction:rtl;text-align:right}
+
+/* ===== الصفحة ===== */
+.page{
+  background:var(--page);max-width:21cm;min-height:29.7cm;margin:24px auto;
+  padding:1.5cm 1.6cm;box-shadow:0 4px 24px rgba(0,0,0,.1);
+}
+
+/* ترويسة */
+.hdr{border-bottom:2.5px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
+.hdr h1{font-size:1.75rem;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.hdr .title{color:var(--accent);font-weight:600;font-size:1.02rem;margin-top:4px}
+.contact{display:flex;flex-wrap:wrap;gap:5px 16px;margin-top:10px;font-size:.83rem;color:var(--muted)}
+.contact a{color:var(--muted);text-decoration:none}
+.contact a:hover{color:var(--accent)}
+
+h2{
+  font-size:.88rem;font-weight:700;color:var(--accent);text-transform:uppercase;
+  letter-spacing:.06em;margin:18px 0 9px;padding-bottom:4px;border-bottom:1px solid var(--line);
+}
+.summary{font-size:.9rem;color:var(--ink);text-align:justify}
+
+/* خبرات */
+.job{margin-bottom:13px;break-inside:avoid}
+.job-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.job h3{font-size:.95rem;font-weight:600}
+.job .org{font-size:.86rem;color:var(--accent);font-weight:500}
+.job .when{font-size:.8rem;color:var(--muted);white-space:nowrap;font-weight:500}
+.job ul{margin:5px 0 0;padding-inline-start:17px}
+.job li{font-size:.855rem;color:var(--muted);margin-bottom:2px}
+
+/* مهارات */
+.sk{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.855rem}
+.sk dt{font-weight:600;white-space:nowrap;color:var(--ink)}
+.sk dd{color:var(--muted)}
+
+/* مشاريع */
+.proj{margin-bottom:10px;break-inside:avoid}
+.proj-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
+.proj h3{font-size:.92rem;font-weight:600}
+.proj .when{font-size:.79rem;color:var(--muted);white-space:nowrap}
+.proj p{font-size:.85rem;color:var(--muted);margin-top:2px}
+.proj .tech{font-size:.79rem;color:var(--accent);margin-top:2px}
+.win{background:var(--soft);color:var(--accent);font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:99px}
+
+/* شهادات */
+.cert{display:flex;justify-content:space-between;gap:12px;font-size:.855rem;margin-bottom:4px;flex-wrap:wrap}
+.cert .when{color:var(--muted);font-size:.8rem;white-space:nowrap}
+
+.hide{display:none !important}
+
+/* ===== الطباعة ===== */
+@page{size:A4;margin:0}
+@media print{
+  body{background:#fff}
+  .bar{display:none !important}
+  .page{margin:0;box-shadow:none;max-width:none;min-height:auto;padding:1.3cm 1.5cm}
+  h2{margin-top:14px}
+  a{color:var(--muted) !important;text-decoration:none}
+}
+@media(max-width:800px){
+  .page{padding:1.2cm 1cm;margin:12px auto}
+}
+/* الجسم يرث الاتجاه من الغلاف عند النشر */
+#cvroot{direction:rtl;text-align:right}
+#cvroot.en{direction:ltr;text-align:left;font-family:"IBM Plex Sans",system-ui,sans-serif}
+#cvroot.en .page{direction:ltr;text-align:left}
+</style>
+</head>
+<body>
+<div id="cvroot" class="ar" data-role="dev">
+
+
+<div class="bar">
+  <div class="grp">
+    <label>اللغة</label>
+    <button id="b-ar" class="on">عربي</button>
+    <button id="b-en">English</button>
+  </div>
+  <div class="grp">
+    <label>التخصص</label>
+    <button id="b-dev" class="on">مطور برمجيات</button>
+    <button id="b-it">دعم فني</button>
+  </div>
+  <button class="print">🖨️ حفظ PDF</button>
+  <div class="hint">اضغط «حفظ PDF» ← في نافذة الطباعة اختر «Save as PDF» ← فعّل «Background graphics» ليظهر التلوين.</div>
+</div>
+
+<!-- ══════════════ عربي ══════════════ -->
+<div class="page" id="p-ar">
+  <div class="hdr">
+    <h1>عبدالله مراد هائل محمد</h1>
+    <div class="title role-dev">مهندس تقنية معلومات · مطور برمجيات Full-Stack</div>
+    <div class="title role-it hide">أخصائي دعم فني · مسؤول أنظمة تقنية معلومات</div>
+    <div class="contact">
+      <span>📍 الرياض، السعودية</span>
+      <span>📞 +966 53 809 3956</span>
+      <a href="mailto:abdullahmuradbus@gmail.com">✉️ abdullahmuradbus@gmail.com</a>
+      <a href="https://abdullahmurad73.github.io">🌐 abdullahmurad73.github.io</a>
+      <a href="https://github.com/AbdullahMurad73">💻 github.com/AbdullahMurad73</a>
+      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420">🔗 LinkedIn</a>
+    </div>
+  </div>
+
+  <h2>الملخص المهني</h2>
+  <p class="summary role-dev">
+    مهندس تقنية معلومات ومطور Full-Stack بخبرة سنتين في تصميم وتطوير الأنظمة
+    المؤسسية وتطبيقات الويب. بنيت منصات تجارة إلكترونية Headless ومنصات عقارية وأنظمة
+    استجابة لحظية، من تصميم قاعدة البيانات حتى النشر عبر Docker. أجمع بين التطوير وخبرة
+    ميدانية في البنية التحتية والشبكات وأنظمة المراقبة — ما يجعلني أبني أنظمة قابلة
+    للتشغيل والصيانة، لا مجرد كود يعمل على جهازي.
+  </p>
+  <p class="summary role-it hide">
+    أخصائي تقنية معلومات ودعم فني بخبرة سنتين في إدارة البنية التحتية والشبكات
+    متعددة الفروع. قدمت الدعم التقني الشامل لأكثر من أحد عشر فرعاً، وأدرت أنظمة المراقبة
+    والبصمة ونقاط البيع والخوادم. أجمع بين الخبرة الميدانية المكثفة ومهارات تطوير البرمجيات
+    وتحليل البيانات — ما يتيح لي أتمتة ما كان يُنجز يدوياً، ومعالجة الأعطال من جذرها.
+  </p>
+
+  <h2>الخبرات المهنية</h2>
+
+  <div class="job role-dev">
+    <div class="job-top"><div><h3>مطور برمجيات متكامل (Full-Stack)</h3><div class="org">عمل حر · عن بُعد</div></div><div class="when">2022 – حتى الآن</div></div>
+    <ul>
+      <li>تطوير تطبيقات ويب وأنظمة إدارية متكاملة حسب متطلبات العملاء.</li>
+      <li>تصميم معماريات Full-Stack وبناء REST APIs والتكامل مع خدمات خارجية.</li>
+      <li>تصميم وإدارة قواعد البيانات لضمان سلامة البيانات وقابلية التوسع.</li>
+      <li>اختبار الأنظمة وتحسين الأداء وتجربة المستخدم.</li>
+      <li>إدارة الإصدارات عبر Git/GitHub ودعم ما بعد التسليم.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>دعم فني وإدارة أنظمة</h3><div class="org">شركة معسلات — الدمام</div></div><div class="when">2026</div></div>
+    <ul>
+      <li>الدعم التقني الشامل لأكثر من <strong>11 فرعاً تجارياً</strong>.</li>
+      <li>معالجة أعطال الأجهزة والطابعات وأنظمة نقاط البيع (POS) لضمان استمرار التشغيل.</li>
+      <li>إدارة وصيانة أنظمة كاميرات المراقبة والمراقبة الأمنية المركزية.</li>
+      <li>حل مشاكل الشبكات والاتصال بين الفروع وتحسين الاعتمادية.</li>
+      <li class="role-it">إدارة تذاكر الدعم وتنفيذ الصيانة الوقائية الدورية.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>دعم فني وتقنية معلومات</h3><div class="org">تقنية ناصر — البكيرية، القصيم</div></div><div class="when">2026</div></div>
+    <ul>
+      <li>الدعم الفني للعملاء عن بُعد وحضورياً، وتشخيص وإصلاح أعطال الأجهزة والبرامج.</li>
+      <li>تنفيذ عمليات النسخ الاحتياطي واستعادة البيانات وتركيب أنظمة التشغيل.</li>
+      <li class="role-it">إعداد الشبكات المنزلية والتجارية الصغيرة وصيانة الحواسيب والطابعات.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>دعم فني وتدريب تقني</h3><div class="org">شركة بيت هائل سعيد أنعم (HSA)</div></div><div class="when">2025 – 2026</div></div>
+    <ul>
+      <li>الدعم الفني للموظفين وحل مشاكل الحواسيب والبرمجيات.</li>
+      <li>تركيب وإعداد أنظمة البصمة وكاميرات المراقبة.</li>
+      <li>إدارة المستخدمين والصلاحيات عبر <strong>Active Directory</strong>.</li>
+      <li>استكشاف أعطال الشبكات ومتابعة النسخ الاحتياطية وضمان استقرارها.</li>
+    </ul>
+  </div>
+
+  <h2>المشاريع</h2>
+
+  <div class="proj">
+    <div class="proj-top"><h3>روبوت الاستقبال الذكي (MIRA) <span class="win">المركز الأول</span></h3><div class="when">2023 – 2024</div></div>
+    <p>مطور ومشرف فريق. برمجة أجزاء من النظام وحل مشاكل التكامل بين العتاد والبرمجيات، والإشراف على فريق من <strong>12 عضواً</strong>، وإدارة الميزانية. حصد المركز الأول على مستوى مشاريع التخرج.</p>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>متجر الضيافة — منصة تجارة إلكترونية</h3><div class="when">2026</div></div>
+    <p>منصة Headless Commerce كاملة مع ست إضافات مخصصة (طلب عروض أسعار، سعة الحجز، جدولة المطبخ، تقارير المبيعات، تقييمات المنتجات)، وتطبيق PWA يعمل دون اتصال ويدعم لغتين.</p>
+    <div class="tech">Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
+  </div>
+
+  <div class="proj role-dev">
+    <div class="proj-top"><h3>عقارX — منصة عقارات</h3><div class="when">2026</div></div>
+    <p>مصادقة عبر OTP مع JWT، إدارة العقارات ورفع الصور، نشر الإعلانات والبحث الجغرافي بالخريطة، المفضلة، ولوحة مراجعة إدارية بصلاحيات صارمة.</p>
+    <div class="tech">NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
+  </div>
+
+  <div class="proj role-dev">
+    <div class="proj-top"><h3>Abdullah AI — وكيل تنفيذي</h3><div class="when">2026</div></div>
+    <p>معمارية إنتاجية: Orchestrator، ذاكرة مصنّفة، بوابة موافقة بشرية قبل أي عملية حساسة، وسجل تدقيق كامل — خلف واجهة واحدة تدعم عدة مزودي ذكاء اصطناعي.</p>
+    <div class="tech">NestJS · TypeORM · Multi-Provider AI</div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>ميدان — نظام الاستجابة الميدانية اللحظي</h3><div class="when">2026</div></div>
+    <p>نظام يربط غرفة التحكم بمراقبي لجان الاختبارات عبر قناة لحظية موثّقة، بدل الاتصال الهاتفي والورق.</p>
+    <div class="tech">React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>أتمتة وتحليل بيانات الفروع (BI)</h3><div class="when">2026</div></div>
+    <p>توحيد وتنظيف بيانات <strong>11 فرعاً</strong> عبر Power Query مع تحقق آلي من سلامة الأرقام، وبناء لوحات مبيعات تفاعلية — حوّل التقرير الشهري من ساعات يدوية إلى تحديث بضغطة زر.</p>
+    <div class="tech">Power BI · Power Query · DAX · Excel · VBA</div>
+  </div>
+
+  <div class="proj role-it">
+    <div class="proj-top"><h3>دراسة وتصميم شبكة محلية (LAN)</h3><div class="when">2024</div></div>
+    <p>مسح ميداني، تصميم طوبولوجيا الشبكة، تقدير الاحتياجات والمعدات، وتركيب الأجهزة وتجهيز بيئة العمل.</p>
+  </div>
+
+  <h2>المهارات</h2>
+  <dl class="sk">
+    <dt class="role-dev">البرمجة والتطوير</dt>
+    <dd class="role-dev">JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
+    <dt class="role-dev">قواعد البيانات</dt>
+    <dd class="role-dev">PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
+    <dt class="role-it">الدعم الفني والتشغيل</dt>
+    <dd class="role-it">تشخيص أعطال الأجهزة والبرمجيات · الدعم عن بُعد · دعم نقاط البيع (POS) · الطابعات · تركيب الأنظمة (Windows 10/11)</dd>
+    <dt>أنظمة وإدارة IT</dt>
+    <dd>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
+    <dt>الشبكات والبنية التحتية</dt>
+    <dd>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · تمديد الكابلات · إعداد Wi-Fi</dd>
+    <dt>أنظمة المراقبة والأمن</dt>
+    <dd>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · أنظمة البصمة (Biometric)</dd>
+    <dt>تحليل البيانات</dt>
+    <dd>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
+    <dt>الأدوات</dt>
+    <dd>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
+    <dt class="role-dev">الذكاء الاصطناعي</dt>
+    <dd class="role-dev">Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
+    <dt>المهارات الشخصية</dt>
+    <dd>حل المشكلات وتحليل جذر العطل · العمل ضمن فريق وقيادته · تحمّل ضغط العمل والمهام المتزامنة · التعلّم الذاتي السريع لأي تقنية جديدة · التواصل والتدريب التقني · إدارة الوقت وترتيب الأولويات · الدقة في التوثيق والمتابعة</dd>
+    <dt>اللغات</dt>
+    <dd>العربية (اللغة الأم) · الإنجليزية (مستوى جيد)</dd>
+  </dl>
+
+  <h2>التعليم</h2>
+  <div class="cert"><span><strong>بكالوريوس تقنية المعلومات</strong> — الجامعة الوطنية، تعز (الفرع الرئيسي)</span><span class="when">2021 – 2024</span></div>
+
+  <h2>الشهادات والدورات</h2>
+  <div class="cert"><span><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum، إدارة المخاطر، الجداول، أدوات PM</span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>Crash Course on Python</strong></span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>دورة عملي شبكات</strong> — 70 ساعة · بتقدير 96% (ممتاز)</span><span class="when">2024</span></div>
+  <div class="cert"><span><strong>أنظمة المراقبة (CCTV)</strong> — المركز العالمي للتدريب والتطوير · 45 ساعة · بتقدير 90% · أنظمة IP و Analog متعددة العلامات (Hikvision · Dahua · D-Link)</span><span class="when">ديسمبر 2025 – يناير 2026</span></div>
+</div>
+
+<!-- ══════════════ English ══════════════ -->
+<div class="page hide" id="p-en">
+  <div class="hdr">
+    <h1>Abdullah Murad Hail Mohammed</h1>
+    <div class="title role-dev">IT Engineer · Full-Stack Software Developer</div>
+    <div class="title role-it hide">IT Support Specialist · IT Systems Administrator</div>
+    <div class="contact">
+      <span>📍 Riyadh, Saudi Arabia</span>
+      <span>📞 +966 53 809 3956</span>
+      <a href="mailto:abdullahmuradbus@gmail.com">✉️ abdullahmuradbus@gmail.com</a>
+      <a href="https://abdullahmurad73.github.io">🌐 abdullahmurad73.github.io</a>
+      <a href="https://github.com/AbdullahMurad73">💻 github.com/AbdullahMurad73</a>
+      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420">🔗 LinkedIn</a>
+    </div>
+  </div>
+
+  <h2>Professional Summary</h2>
+  <p class="summary role-dev">
+    IT Engineer and Full-Stack Developer with 2 years of hands-on experience designing and
+    building enterprise systems and web applications. Delivered headless e-commerce platforms,
+    real-estate marketplaces, and real-time response systems — from database design through
+    Docker deployment. Combines software development with intensive field experience in IT
+    infrastructure, networking, and surveillance systems, producing solutions that are built
+    to be operated and maintained, not just to compile.
+  </p>
+  <p class="summary role-it hide">
+    IT Support Specialist with 2 years of hands-on experience managing corporate
+    infrastructure and multi-branch network environments across 11 branches. Administered
+    CCTV, biometric, POS, and server systems in production environments. Combines intensive
+    fieldwork with software development and data analysis skills — automating manual processes
+    and resolving faults at the root rather than the symptom.
+  </p>
+
+  <h2>Professional Experience</h2>
+
+  <div class="job role-dev">
+    <div class="job-top"><div><h3>Full-Stack Developer</h3><div class="org">Freelance · Remote</div></div><div class="when">2022 – Present</div></div>
+    <ul>
+      <li>Developed custom web applications and administrative systems to client specifications.</li>
+      <li>Designed full-stack architectures, built REST APIs, and integrated third-party services.</li>
+      <li>Designed and managed database systems ensuring data integrity and scalability.</li>
+      <li>Conducted system testing, performance tuning, and UX improvements.</li>
+      <li>Managed version control via Git/GitHub and provided post-deployment support.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>IT Support &amp; Systems Administrator</h3><div class="org">Maaslat Company — Dammam, KSA</div></div><div class="when">2026</div></div>
+    <ul>
+      <li>Provided comprehensive IT support across <strong>11+ commercial branches</strong>.</li>
+      <li>Resolved hardware, printer, and Point-of-Sale (POS) issues ensuring uninterrupted operations.</li>
+      <li>Managed and maintained centralized CCTV surveillance and security systems.</li>
+      <li>Troubleshot and optimized multi-branch network infrastructure and remote connectivity.</li>
+      <li class="role-it">Managed helpdesk ticketing workflows and executed preventive maintenance.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>IT Support &amp; Technical Specialist</h3><div class="org">Nasser Technology — Al-Qassim, KSA</div></div><div class="when">2026</div></div>
+    <ul>
+      <li>Delivered remote and on-site technical support for corporate and retail customers.</li>
+      <li>Diagnosed and repaired hardware malfunctions and software configuration errors.</li>
+      <li class="role-it">Executed backup and recovery workflows, OS installation, and small-business network setup.</li>
+    </ul>
+  </div>
+
+  <div class="job">
+    <div class="job-top"><div><h3>IT Support &amp; Technical Training</h3><div class="org">Hayel Saeed Anam Group (HSA)</div></div><div class="when">2025 – 2026</div></div>
+    <ul>
+      <li>Provided technical support to employees, resolving hardware and software issues.</li>
+      <li>Installed and configured biometric time-attendance and CCTV surveillance systems.</li>
+      <li>Administered user accounts and access permissions via <strong>Active Directory</strong>.</li>
+      <li>Performed network troubleshooting and monitored automated backup procedures.</li>
+    </ul>
+  </div>
+
+  <h2>Projects</h2>
+
+  <div class="proj">
+    <div class="proj-top"><h3>MIRA — Smart Reception Robot <span class="win">1st Place</span></h3><div class="when">2023 – 2024</div></div>
+    <p>Developer &amp; Team Supervisor. Programmed core system modules and resolved hardware–software integration challenges. Supervised a <strong>12-member</strong> multidisciplinary team and managed the project budget. Awarded 1st place university-wide for graduation projects.</p>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>Aldiyafa Store — E-commerce Platform</h3><div class="when">2026</div></div>
+    <p>Full headless commerce platform with six custom plugins (quote requests, booking capacity, kitchen scheduling, sales reporting, product reviews) and an offline-capable bilingual PWA.</p>
+    <div class="tech">Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
+  </div>
+
+  <div class="proj role-dev">
+    <div class="proj-top"><h3>AqarX — Real Estate Platform</h3><div class="when">2026</div></div>
+    <p>OTP authentication with JWT, property management with image uploads, listing publication with map-based geographic search, favorites, and an admin review workflow with strict role enforcement.</p>
+    <div class="tech">NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
+  </div>
+
+  <div class="proj role-dev">
+    <div class="proj-top"><h3>Abdullah AI — Executive Agent</h3><div class="when">2026</div></div>
+    <p>Production-grade architecture: orchestrator, categorized memory, human-in-the-loop approval gate before any sensitive operation, and full audit logging — behind a single multi-provider AI interface.</p>
+    <div class="tech">NestJS · TypeORM · Multi-Provider AI</div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>Midan — Real-Time Field Response System</h3><div class="when">2026</div></div>
+    <p>Connects the control room to exam committee supervisors through a single documented real-time channel, replacing phone calls and paper forms.</p>
+    <div class="tech">React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
+  </div>
+
+  <div class="proj">
+    <div class="proj-top"><h3>Branch Data Automation &amp; BI</h3><div class="when">2026</div></div>
+    <p>Consolidated and cleansed data across <strong>11 branches</strong> via Power Query with automated integrity validation, and built interactive sales dashboards — turning hours of manual monthly reporting into a one-click refresh.</p>
+    <div class="tech">Power BI · Power Query · DAX · Excel · VBA</div>
+  </div>
+
+  <div class="proj role-it">
+    <div class="proj-top"><h3>LAN Design &amp; Implementation</h3><div class="when">2024</div></div>
+    <p>Site survey, network topology design, hardware capacity planning, and physical device deployment.</p>
+  </div>
+
+  <h2>Skills</h2>
+  <dl class="sk">
+    <dt class="role-dev">Development</dt>
+    <dd class="role-dev">JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
+    <dt class="role-dev">Databases</dt>
+    <dd class="role-dev">PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
+    <dt class="role-it">Support &amp; Operations</dt>
+    <dd class="role-it">Hardware &amp; Software Troubleshooting · Remote Support · POS Systems · Printers · System Installation (Windows 10/11)</dd>
+    <dt>IT &amp; Systems Administration</dt>
+    <dd>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
+    <dt>Networking &amp; Infrastructure</dt>
+    <dd>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · Network Cabling · Wi-Fi Configuration</dd>
+    <dt>Surveillance &amp; Security</dt>
+    <dd>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · Biometric Systems</dd>
+    <dt>Data &amp; BI</dt>
+    <dd>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
+    <dt>Tools</dt>
+    <dd>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
+    <dt class="role-dev">AI</dt>
+    <dd class="role-dev">Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
+    <dt>Soft Skills</dt>
+    <dd>Problem solving &amp; root-cause analysis · Teamwork and team leadership · Works well under pressure and parallel tasks · Fast self-learner of new technologies · Communication &amp; technical training · Time management and prioritization · Accuracy in documentation and follow-up</dd>
+    <dt>Languages</dt>
+    <dd>Arabic (Native) · English (Good)</dd>
+  </dl>
+
+  <h2>Education</h2>
+  <div class="cert"><span><strong>B.Sc. in Information Technology</strong> — National University, Taiz (Main Branch)</span><span class="when">2021 – 2024</span></div>
+
+  <h2>Certifications</h2>
+  <div class="cert"><span><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum, Risk Management, Scheduling, PM Tools</span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>Crash Course on Python</strong></span><span class="when">2025</span></div>
+  <div class="cert"><span><strong>Practical Networking Course</strong> — 70 hours · Grade 96% (Excellent)</span><span class="when">2024</span></div>
+  <div class="cert"><span><strong>Surveillance Systems (CCTV)</strong> — Global International Training Center · 45 hours · Grade 90% · Multi-brand IP &amp; Analog (Hikvision · Dahua · D-Link)</span><span class="when">Dec 2025 – Jan 2026</span></div>
+</div>
+
+
+
+
+</div>
+<script>
+var lang="ar", role="dev";
+function apply(){
+  document.getElementById("cvroot").className = lang;
+  document.getElementById("cvroot").setAttribute("data-role", role);
+  document.getElementById("p-ar").classList.toggle("hide", lang!=="ar");
+  document.getElementById("p-en").classList.toggle("hide", lang!=="en");
+  document.getElementById("b-ar").classList.toggle("on", lang==="ar");
+  document.getElementById("b-en").classList.toggle("on", lang==="en");
+  document.getElementById("b-dev").classList.toggle("on", role==="dev");
+  document.getElementById("b-it").classList.toggle("on", role==="it");
+  var els = document.querySelectorAll(".role-dev, .role-it");
+  for (var i=0;i<els.length;i++){
+    var wantDev = els[i].classList.contains("role-dev");
+    els[i].classList.toggle("hide", wantDev ? role!=="dev" : role!=="it");
+  }
+  document.title = (lang==="ar" ? "السيرة الذاتية — عبدالله مراد هائل محمد"
+                                : "CV — Abdullah Murad Hail Mohammed");
+  try{ localStorage.setItem("cv", lang+"|"+role); }catch(e){}
+}
+function setLang(l){ lang=l; apply(); }
+function setRole(r){ role=r; apply(); }
+try{
+  var v=localStorage.getItem("cv");
+  if(v){ var p=v.split("|"); lang=p[0]||"ar"; role=p[1]||"dev"; }
+}catch(e){}
+apply();
+
+// ربط الأزرار (بدل onclick المضمّنة — سياسة CSP تمنعها)
+document.getElementById("b-ar").addEventListener("click", function(){ setLang("ar"); });
+document.getElementById("b-en").addEventListener("click", function(){ setLang("en"); });
+document.getElementById("b-dev").addEventListener("click", function(){ setRole("dev"); });
+document.getElementById("b-it").addEventListener("click", function(){ setRole("it"); });
+document.querySelector(".bar .print").addEventListener("click", function(){ window.print(); });
+
+</script>
+
+</body>
+</html>
