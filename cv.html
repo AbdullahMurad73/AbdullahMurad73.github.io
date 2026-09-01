@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="السيرة الذاتية — عبدالله مراد هائل محمد · مهندس تقنية معلومات ومطور Full-Stack">
+<meta name="description" content="السيرة الذاتية — عبدالله مراد هائل محمد">
 <meta name="robots" content="noindex">
 <title>السيرة الذاتية — عبدالله مراد هائل محمد</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -87,13 +87,35 @@ h2{
 .hide{display:none !important}
 
 /* ===== الطباعة ===== */
-@page{size:A4;margin:0}
+/* ═══ الطباعة — الهوامش على @page لتتكرر في كل صفحة ═══ */
+@page{ size:A4; margin:1.4cm 1.5cm; }
+
 @media print{
-  body{background:#fff}
-  .bar{display:none !important}
-  .page{margin:0;box-shadow:none;max-width:none;min-height:auto;padding:1.3cm 1.5cm}
-  h2{margin-top:14px}
-  a{color:var(--muted) !important;text-decoration:none}
+  body{ background:#fff; }
+  .bar{ display:none !important; }
+
+  /* الحاوية بلا حشوة ولا ارتفاع أدنى — @page تتولى الهوامش */
+  .page{
+    margin:0; padding:0; box-shadow:none;
+    max-width:none; min-height:auto; width:auto;
+  }
+
+  /* لا يُقصّ أي بلوك في منتصفه */
+  .job, .proj, .cert, .hdr{ break-inside:avoid; page-break-inside:avoid; }
+  .sk{ break-inside:auto; }
+  .sk dt, .sk dd{ break-inside:avoid; page-break-inside:avoid; }
+
+  /* عنوان القسم لا يبقى وحيداً في آخر الصفحة */
+  h2{ break-after:avoid; page-break-after:avoid; margin-top:14px; }
+  h3{ break-after:avoid; page-break-after:avoid; }
+
+  /* لا سطر يتيم في أول الصفحة أو آخرها */
+  p, li{ orphans:3; widows:3; }
+
+  a{ color:var(--muted) !important; text-decoration:none; }
+
+  /* ضمان طباعة الألوان والخلفيات */
+  *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
 }
 @media(max-width:800px){
   .page{padding:1.2cm 1cm;margin:12px auto}
