@@ -3,162 +3,162 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>السيرة الذاتية — عبدالله مراد هائل محمد</title>
 <meta name="description" content="السيرة الذاتية — عبدالله مراد هائل محمد">
 <meta name="robots" content="noindex">
-<title>السيرة الذاتية — عبدالله مراد هائل محمد</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=Tajawal:wght@400;500;700&family=Almarai:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Readex+Pro:wght@400;500;600&family=El+Messiri:wght@400;600;700&family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&family=Playfair+Display:wght@400;600;700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
   --ink:#16181d; --muted:#5a6070; --line:#d8dce4; --accent:#0f5c8c;
   --soft:#eef4f9; --page:#ffffff; --bg:#e9ecf1;
+  --font-ar:"IBM Plex Sans Arabic"; --font-en:"IBM Plex Sans";
+  --scale:1;
 }
 *{box-sizing:border-box;margin:0;padding:0}
-body{background:var(--bg);color:var(--ink);font-family:"IBM Plex Sans Arabic",system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
-body.en{direction:ltr;font-family:"IBM Plex Sans",system-ui,sans-serif}
+body{background:var(--bg);color:var(--ink);
+  font-family:var(--font-ar),system-ui,sans-serif;line-height:1.6;
+  -webkit-font-smoothing:antialiased}
+body.en{direction:ltr;font-family:var(--font-en),system-ui,sans-serif}
 body.en .page{direction:ltr;text-align:left}
 
-/* ===== شريط التحكم (لا يُطبع) ===== */
-.bar{
-  position:sticky;top:0;z-index:50;background:#16181d;color:#fff;
-  padding:12px 20px;display:flex;gap:14px;align-items:center;flex-wrap:wrap;
-  box-shadow:0 2px 12px rgba(0,0,0,.18);
-}
-.bar .grp{display:flex;gap:6px;align-items:center}
-.bar label{font-size:.78rem;opacity:.65;margin-inline-end:4px;font-family:"IBM Plex Sans Arabic",sans-serif}
-.bar button{
-  background:#2a2e38;color:#fff;border:1px solid #3c414d;padding:7px 15px;
-  border-radius:6px;cursor:pointer;font-size:.85rem;font-family:"IBM Plex Sans Arabic",sans-serif;
-}
-.bar button:hover{background:#3c414d}
+/* ═══ شريط التحكم ═══ */
+.bar{position:sticky;top:0;z-index:50;background:#16181d;color:#fff;
+  padding:10px 16px;display:flex;gap:10px;align-items:center;flex-wrap:wrap;
+  box-shadow:0 2px 12px rgba(0,0,0,.18)}
+.grp{display:flex;gap:5px;align-items:center}
+.bar label{font-size:.75rem;opacity:.6;margin-inline-end:3px;
+  font-family:"IBM Plex Sans Arabic",sans-serif;white-space:nowrap}
+.bar button,.bar select{background:#2a2e38;color:#fff;border:1px solid #3c414d;
+  padding:6px 13px;border-radius:6px;cursor:pointer;font-size:.83rem;
+  font-family:"IBM Plex Sans Arabic",sans-serif}
+.bar button:hover,.bar select:hover{background:#3c414d}
 .bar button.on{background:#2a8fd4;border-color:#2a8fd4;font-weight:600}
-.bar .print{background:#1a9a63;border-color:#1a9a63;font-weight:600;margin-inline-start:auto}
-.bar .print:hover{background:#22b374}
-.hint{font-size:.76rem;opacity:.6;width:100%;font-family:"IBM Plex Sans Arabic",sans-serif;direction:rtl;text-align:right}
+.bar select{padding:6px 9px;max-width:160px}
+.bar .save{background:#1a9a63;border-color:#1a9a63;font-weight:600}
+.bar .save:hover{background:#22b374}
+.bar .print{background:#7a4fd0;border-color:#7a4fd0;font-weight:600}
+.bar .print:hover{background:#8c63dd}
+.bar .danger{background:#8c2f28;border-color:#8c2f28}
+.bar .danger:hover{background:#a83a32}
+.spacer{margin-inline-start:auto}
+.hint{font-size:.74rem;opacity:.55;width:100%;
+  font-family:"IBM Plex Sans Arabic",sans-serif;direction:rtl;text-align:right}
 
-/* ===== الصفحة ===== */
-.page{
-  background:var(--page);max-width:21cm;min-height:29.7cm;margin:24px auto;
+/* ═══ وضع التحرير ═══ */
+.edit-on [contenteditable]{outline:1px dashed rgba(15,92,140,.28);
+  outline-offset:2px;border-radius:3px;transition:background .12s}
+.edit-on [contenteditable]:hover{background:rgba(15,92,140,.05)}
+.edit-on [contenteditable]:focus{outline:2px solid var(--accent);
+  background:rgba(15,92,140,.07)}
+
+/* أدوات الإضافة والحذف */
+.tools{display:none;gap:5px;margin:4px 0 10px}
+.edit-on .tools{display:flex}
+.tools button{background:var(--soft);color:var(--accent);border:1px solid var(--line);
+  padding:3px 11px;border-radius:6px;cursor:pointer;font-size:.74rem;
+  font-family:"IBM Plex Sans Arabic",sans-serif;font-weight:600}
+.tools button:hover{background:var(--accent);color:#fff;border-color:var(--accent)}
+.tools button.del{color:#9c3a2c}
+.tools button.del:hover{background:#9c3a2c;color:#fff;border-color:#9c3a2c}
+
+.item{position:relative}
+.edit-on .item{padding-inline-end:28px}
+.item .x{display:none;position:absolute;inset-inline-end:0;top:0;
+  width:22px;height:22px;border-radius:5px;border:1px solid var(--line);
+  background:var(--page);color:#9c3a2c;cursor:pointer;font-size:.78rem;
+  line-height:1;padding:0}
+.edit-on .item:hover .x{display:block}
+.item .x:hover{background:#9c3a2c;color:#fff;border-color:#9c3a2c}
+
+/* ═══ الصفحة ═══ */
+.page{background:var(--page);max-width:21cm;min-height:29.7cm;margin:20px auto;
   padding:1.5cm 1.6cm;box-shadow:0 4px 24px rgba(0,0,0,.1);
-}
+  font-size:calc(1rem * var(--scale))}
 
-/* ترويسة */
 .hdr{border-bottom:2.5px solid var(--accent);padding-bottom:14px;margin-bottom:18px}
-.hdr h1{font-size:1.75rem;font-weight:700;letter-spacing:-.01em;line-height:1.2}
-.hdr .title{color:var(--accent);font-weight:600;font-size:1.02rem;margin-top:4px}
-.contact{display:flex;flex-wrap:wrap;gap:5px 16px;margin-top:10px;font-size:.83rem;color:var(--muted)}
-.contact a{color:var(--muted);text-decoration:none}
-.contact a:hover{color:var(--accent)}
+.hdr h1{font-size:1.75em;font-weight:700;letter-spacing:-.01em;line-height:1.2}
+.hdr .title{color:var(--accent);font-weight:600;font-size:1.02em;margin-top:4px}
+.contact{display:flex;flex-wrap:wrap;gap:5px 16px;margin-top:10px;
+  font-size:.83em;color:var(--muted)}
+.contact a,.contact span{color:var(--muted);text-decoration:none}
 
-h2{
-  font-size:.88rem;font-weight:700;color:var(--accent);text-transform:uppercase;
-  letter-spacing:.06em;margin:18px 0 9px;padding-bottom:4px;border-bottom:1px solid var(--line);
-}
-.summary{font-size:.9rem;color:var(--ink);text-align:justify}
+h2{font-size:.88em;font-weight:700;color:var(--accent);text-transform:uppercase;
+  letter-spacing:.06em;margin:18px 0 9px;padding-bottom:4px;
+  border-bottom:1px solid var(--line)}
+.summary{font-size:.9em;color:var(--ink);text-align:justify}
 
-/* خبرات */
 .job{margin-bottom:13px;break-inside:avoid}
-.job-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
-.job h3{font-size:.95rem;font-weight:600}
-.job .org{font-size:.86rem;color:var(--accent);font-weight:500}
-.job .when{font-size:.8rem;color:var(--muted);white-space:nowrap;font-weight:500}
+.job-top{display:flex;justify-content:space-between;gap:12px;
+  align-items:baseline;flex-wrap:wrap}
+.job h3{font-size:.95em;font-weight:600}
+.job .org{font-size:.86em;color:var(--accent);font-weight:500}
+.job .when{font-size:.8em;color:var(--muted);white-space:nowrap;font-weight:500}
 .job ul{margin:5px 0 0;padding-inline-start:17px}
-.job li{font-size:.855rem;color:var(--muted);margin-bottom:2px}
+.job li{font-size:.855em;color:var(--muted);margin-bottom:2px}
 
-/* مهارات */
-.sk{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.855rem}
+.sk{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:.855em}
 .sk dt{font-weight:600;white-space:nowrap;color:var(--ink)}
 .sk dd{color:var(--muted)}
 
-/* مشاريع */
 .proj{margin-bottom:10px;break-inside:avoid}
-.proj-top{display:flex;justify-content:space-between;gap:12px;align-items:baseline;flex-wrap:wrap}
-.proj h3{font-size:.92rem;font-weight:600}
-.proj .when{font-size:.79rem;color:var(--muted);white-space:nowrap}
-.proj p{font-size:.85rem;color:var(--muted);margin-top:2px}
-.proj .tech{font-size:.79rem;color:var(--accent);margin-top:2px}
-.win{background:var(--soft);color:var(--accent);font-size:.72rem;font-weight:700;padding:1px 8px;border-radius:99px}
+.proj-top{display:flex;justify-content:space-between;gap:12px;
+  align-items:baseline;flex-wrap:wrap}
+.proj h3{font-size:.92em;font-weight:600}
+.proj .when{font-size:.79em;color:var(--muted);white-space:nowrap}
+.proj p{font-size:.85em;color:var(--muted);margin-top:2px}
+.proj .tech{font-size:.79em;color:var(--accent);margin-top:2px}
+.win{background:var(--soft);color:var(--accent);font-size:.72em;font-weight:700;
+  padding:1px 8px;border-radius:99px}
 
-/* شهادات */
-.cert{display:flex;justify-content:space-between;gap:12px;font-size:.855rem;margin-bottom:4px;flex-wrap:wrap}
-.cert .when{color:var(--muted);font-size:.8rem;white-space:nowrap}
+.cert{display:flex;justify-content:space-between;gap:12px;font-size:.855em;
+  margin-bottom:4px;flex-wrap:wrap}
+.cert .when{color:var(--muted);font-size:.8em;white-space:nowrap}
 
 .hide{display:none !important}
 
-/* ===== الطباعة ===== */
-/* ═══ الطباعة — الهوامش على @page لتتكرر في كل صفحة ═══ */
+/* ═══ الطباعة ═══ */
 @page{ size:A4; margin:1.05cm 1.15cm; }
-
 @media print{
-  body{ background:#fff; }
-  .bar{ display:none !important; }
+  body{background:#fff}
+  .bar,.tools,.item .x,#toast{display:none !important}
+  .page{margin:0;padding:0;box-shadow:none;max-width:none;min-height:auto;width:auto}
+  [contenteditable]{outline:none !important;background:none !important}
+  .edit-on .item{padding-inline-end:0}
+  .job,.proj,.cert,.hdr{break-inside:avoid;page-break-inside:avoid}
+  .sk dt,.sk dd{break-inside:avoid;page-break-inside:avoid}
+  h2{break-after:avoid;page-break-after:avoid;margin-top:14px}
+  h3{break-after:avoid;page-break-after:avoid}
+  p,li{orphans:3;widows:3}
+  a{color:var(--muted) !important;text-decoration:none}
+  *{-webkit-print-color-adjust:exact;print-color-adjust:exact}
 
-  /* الحاوية بلا حشوة ولا ارتفاع أدنى — @page تتولى الهوامش */
-  .page{
-    margin:0; padding:0; box-shadow:none;
-    max-width:none; min-height:auto; width:auto;
-  }
-
-  /* لا يُقصّ أي بلوك في منتصفه */
-  .job, .proj, .cert, .hdr{ break-inside:avoid; page-break-inside:avoid; }
-  .sk{ break-inside:auto; }
-  .sk dt, .sk dd{ break-inside:avoid; page-break-inside:avoid; }
-
-  /* عنوان القسم لا يبقى وحيداً في آخر الصفحة */
-  h2{ break-after:avoid; page-break-after:avoid; margin-top:14px; }
-  h3{ break-after:avoid; page-break-after:avoid; }
-
-  /* لا سطر يتيم في أول الصفحة أو آخرها */
-  p, li{ orphans:3; widows:3; }
-
-  a{ color:var(--muted) !important; text-decoration:none; }
-
-  /* ضمان طباعة الألوان والخلفيات */
-  *{ -webkit-print-color-adjust:exact; print-color-adjust:exact; }
-
-  /* ═══ ضغط لصفحتين ═══
-     الأحجام بوحدة rem، فتصغير الجذر يقلّصها كلها بنسبة واحدة
-     ويحافظ على التناسب بين العناوين والنصوص. */
-  html{ font-size:13px; }
-  body{ line-height:1.42; }
-
-  .hdr{ padding-bottom:9px; margin-bottom:11px; border-bottom-width:2px; }
-  .hdr h1{ font-size:1.55rem; }
-  .hdr .title{ font-size:.95rem; margin-top:2px; }
-  .contact{ margin-top:6px; gap:2px 12px; font-size:.79rem; }
-
-  h2{ margin:11px 0 5px; padding-bottom:2px; font-size:.83rem; }
-  .summary{ font-size:.86rem; line-height:1.5; }
-
-  .job{ margin-bottom:7px; }
-  .job ul{ margin-top:2px; padding-inline-start:15px; }
-  .job li{ font-size:.815rem; line-height:1.42; margin-bottom:0; }
-  .job h3{ font-size:.9rem; }
-  .job .org{ font-size:.82rem; }
-
-  .proj{ margin-bottom:6px; }
-  .proj h3{ font-size:.88rem; }
-  .proj p{ font-size:.815rem; line-height:1.42; margin-top:1px; }
-  .proj .tech{ font-size:.76rem; margin-top:1px; }
-
-  .sk{ gap:2px 10px; font-size:.815rem; }
-  .sk dd{ line-height:1.42; }
-
-  .cert{ font-size:.815rem; margin-bottom:2px; }
+  /* ضغط لصفحتين */
+  html{font-size:13px}
+  body{line-height:1.42}
+  .hdr{padding-bottom:9px;margin-bottom:11px;border-bottom-width:2px}
+  .contact{margin-top:6px;gap:2px 12px}
+  h2{margin:11px 0 5px;padding-bottom:2px}
+  .job{margin-bottom:7px}
+  .job ul{margin-top:2px;padding-inline-start:15px}
+  .job li{line-height:1.42;margin-bottom:0}
+  .proj{margin-bottom:6px}
+  .proj p{line-height:1.42;margin-top:1px}
+  .sk{gap:2px 10px}
+  .sk dd{line-height:1.42}
+  .cert{margin-bottom:2px}
 }
-@media(max-width:800px){
-  .page{padding:1.2cm 1cm;margin:12px auto}
-}
-/* الجسم يرث الاتجاه من الغلاف عند النشر */
-#cvroot{direction:rtl;text-align:right}
-#cvroot.en{direction:ltr;text-align:left;font-family:"IBM Plex Sans",system-ui,sans-serif}
-#cvroot.en .page{direction:ltr;text-align:left}
+@media(max-width:800px){.page{padding:1.2cm 1cm;margin:12px auto}}
+
+#toast{position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
+  background:#16181d;color:#fff;padding:10px 22px;border-radius:99px;
+  font-size:.86rem;opacity:0;pointer-events:none;transition:opacity .25s;z-index:99;
+  font-family:"IBM Plex Sans Arabic",sans-serif}
+#toast.show{opacity:1}
 </style>
 </head>
-<body>
-<div id="cvroot" class="ar" data-role="dev">
-
+<body class="ar edit-on" data-role="dev">
 
 <div class="bar">
   <div class="grp">
@@ -168,186 +168,230 @@ h2{
   </div>
   <div class="grp">
     <label>التخصص</label>
-    <button id="b-dev" class="on">مطور برمجيات</button>
+    <button id="b-dev" class="on">مطور</button>
     <button id="b-it">دعم فني</button>
   </div>
-  <button class="print">🖨️ حفظ PDF</button>
-  <div class="hint">اضغط «حفظ PDF» ← في نافذة الطباعة اختر «Save as PDF» ← فعّل «Background graphics» ليظهر التلوين.</div>
+  <div class="grp">
+    <label>الخط</label>
+    <select id="font-ar" title="خط النسخة العربية">
+      <option value="IBM Plex Sans Arabic">IBM Plex Arabic — متوازن</option>
+      <option value="Cairo">Cairo — واضح وقوي</option>
+      <option value="Tajawal">Tajawal — عصري نظيف</option>
+      <option value="Almarai">Almarai — مريح للقراءة</option>
+      <option value="Readex Pro">Readex Pro — حديث</option>
+      <option value="Noto Kufi Arabic">Noto Kufi — رسمي</option>
+      <option value="El Messiri">El Messiri — أنيق</option>
+      <option value="Amiri">Amiri — كلاسيكي</option>
+    </select>
+    <select id="font-en" title="خط النسخة الإنجليزية">
+      <option value="IBM Plex Sans">IBM Plex Sans</option>
+      <option value="Inter">Inter</option>
+      <option value="Montserrat">Montserrat</option>
+      <option value="Poppins">Poppins</option>
+      <option value="Lato">Lato</option>
+      <option value="Playfair Display">Playfair Display</option>
+    </select>
+  </div>
+  <div class="grp">
+    <label>الحجم</label>
+    <button id="sz-down" title="تصغير">−</button>
+    <button id="sz-up" title="تكبير">+</button>
+  </div>
+  <div class="grp">
+    <button id="toggle-edit" class="on">✎ التحرير</button>
+  </div>
+  <span class="spacer"></span>
+  <button class="save" id="save">💾 حفظ</button>
+  <button id="export">⬇ نسخة</button>
+  <button id="import">⬆ استرجاع</button>
+  <button class="danger" id="reset">↺ الأصل</button>
+  <button class="print" id="print">🖨️ PDF</button>
+  <div class="hint">
+    اضغط على أي نص وعدّله مباشرة · «حفظ» يخزّن تعديلاتك في المتصفح ·
+    «نسخة» ينزّل ملفاً احتياطياً · عند الطباعة اختر Save as PDF واترك Margins = Default
+  </div>
 </div>
 
-<!-- ══════════════ عربي ══════════════ -->
 <div class="page" id="p-ar">
   <div class="hdr">
-    <h1>عبدالله مراد هائل محمد</h1>
-    <div class="title role-dev">مهندس تقنية معلومات · مطور برمجيات Full-Stack</div>
-    <div class="title role-it hide">أخصائي دعم فني · مسؤول أنظمة تقنية معلومات</div>
+    <h1 data-e>عبدالله مراد هائل محمد</h1>
+    <div class="title role-dev" data-e>مهندس تقنية معلومات · مطور برمجيات Full-Stack</div>
+    <div class="title role-it hide" data-e>أخصائي دعم فني · مسؤول أنظمة تقنية معلومات</div>
     <div class="contact">
-      <span>📍 الرياض، السعودية</span>
-      <span>📞 +966 53 809 3956</span>
-      <a href="mailto:abdullahmuradbus@gmail.com">✉️ abdullahmuradbus@gmail.com</a>
-      <a href="https://abdullahmurad73.github.io">🌐 abdullahmurad73.github.io</a>
-      <a href="https://myportfolioabdullahm.kesug.com">🎨 myportfolioabdullahm.kesug.com</a>
-      <a href="https://github.com/AbdullahMurad73">💻 github.com/AbdullahMurad73</a>
-      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420">🔗 LinkedIn</a>
+      <span data-e>📍 الرياض، السعودية</span>
+      <span data-e>📞 +966 53 809 3956</span>
+      <a href="mailto:abdullahmuradbus@gmail.com" data-e>✉️ abdullahmuradbus@gmail.com</a>
+      <a href="https://abdullahmurad73.github.io" data-e>🌐 abdullahmurad73.github.io</a>
+      <a href="https://myportfolioabdullahm.kesug.com" data-e>🎨 myportfolioabdullahm.kesug.com</a>
+      <a href="https://github.com/AbdullahMurad73" data-e>💻 github.com/AbdullahMurad73</a>
+      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420" data-e>🔗 LinkedIn</a>
     </div>
   </div>
 
-  <h2>الملخص المهني</h2>
-  <p class="summary role-dev">
+  <h2 data-e>الملخص المهني</h2>
+  <p class="summary role-dev" data-e>
     مهندس تقنية معلومات ومطور Full-Stack بخبرة سنتين في تصميم وتطوير الأنظمة
     المؤسسية وتطبيقات الويب. بنيت منصات تجارة إلكترونية Headless ومنصات عقارية وأنظمة
     استجابة لحظية، من تصميم قاعدة البيانات حتى النشر عبر Docker. أجمع بين التطوير وخبرة
     ميدانية في البنية التحتية والشبكات وأنظمة المراقبة — ما يجعلني أبني أنظمة قابلة
     للتشغيل والصيانة، لا مجرد كود يعمل على جهازي.
   </p>
-  <p class="summary role-it hide">
+  <p class="summary role-it hide" data-e>
     أخصائي تقنية معلومات ودعم فني بخبرة سنتين في إدارة البنية التحتية والشبكات
     متعددة الفروع. قدمت الدعم التقني الشامل لأكثر من أحد عشر فرعاً، وأدرت أنظمة المراقبة
     والبصمة ونقاط البيع والخوادم. أجمع بين الخبرة الميدانية المكثفة ومهارات تطوير البرمجيات
     وتحليل البيانات — ما يتيح لي أتمتة ما كان يُنجز يدوياً، ومعالجة الأعطال من جذرها.
   </p>
 
-  <h2>الخبرات المهنية</h2>
+  <h2 data-e>الخبرات المهنية</h2>
+  <div class="tools"><button type="button" data-add="job">+ وظيفة</button></div>
+  <div data-list="job">
 
-  <div class="job role-dev">
-    <div class="job-top"><div><h3>مطور برمجيات متكامل (Full-Stack)</h3><div class="org">عمل حر · عن بُعد</div></div><div class="when">2022 – حتى الآن</div></div>
+  <div class="job role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>مطور برمجيات متكامل (Full-Stack)</h3><div class="org" data-e>عمل حر · عن بُعد</div></div><div class="when" data-e>2022 – حتى الآن</div></div>
     <ul>
-      <li>تطوير تطبيقات ويب وأنظمة إدارية متكاملة حسب متطلبات العملاء.</li>
-      <li>تصميم معماريات Full-Stack وبناء REST APIs والتكامل مع خدمات خارجية.</li>
-      <li>تصميم وإدارة قواعد البيانات لضمان سلامة البيانات وقابلية التوسع.</li>
-      <li>اختبار الأنظمة وتحسين الأداء وتجربة المستخدم.</li>
-      <li>إدارة الإصدارات عبر Git/GitHub ودعم ما بعد التسليم.</li>
+      <li data-e>تطوير تطبيقات ويب وأنظمة إدارية متكاملة حسب متطلبات العملاء.</li>
+      <li data-e>تصميم معماريات Full-Stack وبناء REST APIs والتكامل مع خدمات خارجية.</li>
+      <li data-e>تصميم وإدارة قواعد البيانات لضمان سلامة البيانات وقابلية التوسع.</li>
+      <li data-e>اختبار الأنظمة وتحسين الأداء وتجربة المستخدم.</li>
+      <li data-e>إدارة الإصدارات عبر Git/GitHub ودعم ما بعد التسليم.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>دعم فني وإدارة أنظمة</h3><div class="org">شركة معسلات — الدمام</div></div><div class="when">2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>دعم فني وإدارة أنظمة</h3><div class="org" data-e>شركة معسلات — الدمام</div></div><div class="when" data-e>2026</div></div>
     <ul>
-      <li>الدعم التقني الشامل لأكثر من <strong>11 فرعاً تجارياً</strong>.</li>
-      <li>معالجة أعطال الأجهزة والطابعات وأنظمة نقاط البيع (POS) لضمان استمرار التشغيل.</li>
-      <li>إدارة وصيانة أنظمة كاميرات المراقبة والمراقبة الأمنية المركزية.</li>
-      <li>حل مشاكل الشبكات والاتصال بين الفروع وتحسين الاعتمادية.</li>
-      <li class="role-it">إدارة تذاكر الدعم وتنفيذ الصيانة الوقائية الدورية.</li>
+      <li data-e>الدعم التقني الشامل لأكثر من <strong>11 فرعاً تجارياً</strong>.</li>
+      <li data-e>معالجة أعطال الأجهزة والطابعات وأنظمة نقاط البيع (POS) لضمان استمرار التشغيل.</li>
+      <li data-e>إدارة وصيانة أنظمة كاميرات المراقبة والمراقبة الأمنية المركزية.</li>
+      <li data-e>حل مشاكل الشبكات والاتصال بين الفروع وتحسين الاعتمادية.</li>
+      <li class="role-it" data-e>إدارة تذاكر الدعم وتنفيذ الصيانة الوقائية الدورية.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>دعم فني وتقنية معلومات</h3><div class="org">تقنية ناصر — البكيرية، القصيم</div></div><div class="when">2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>دعم فني وتقنية معلومات</h3><div class="org" data-e>تقنية ناصر — البكيرية، القصيم</div></div><div class="when" data-e>2026</div></div>
     <ul>
-      <li>الدعم الفني للعملاء عن بُعد وحضورياً، وتشخيص وإصلاح أعطال الأجهزة والبرامج.</li>
-      <li>تنفيذ عمليات النسخ الاحتياطي واستعادة البيانات وتركيب أنظمة التشغيل.</li>
-      <li class="role-it">إعداد الشبكات المنزلية والتجارية الصغيرة وصيانة الحواسيب والطابعات.</li>
+      <li data-e>الدعم الفني للعملاء عن بُعد وحضورياً، وتشخيص وإصلاح أعطال الأجهزة والبرامج.</li>
+      <li data-e>تنفيذ عمليات النسخ الاحتياطي واستعادة البيانات وتركيب أنظمة التشغيل.</li>
+      <li class="role-it" data-e>إعداد الشبكات المنزلية والتجارية الصغيرة وصيانة الحواسيب والطابعات.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>دعم فني وتدريب تقني</h3><div class="org">شركة بيت هائل سعيد أنعم (HSA)</div></div><div class="when">2025 – 2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>دعم فني وتدريب تقني</h3><div class="org" data-e>شركة بيت هائل سعيد أنعم (HSA)</div></div><div class="when" data-e>2025 – 2026</div></div>
     <ul>
-      <li>الدعم الفني للموظفين وحل مشاكل الحواسيب والبرمجيات.</li>
-      <li>تركيب وإعداد أنظمة البصمة وكاميرات المراقبة.</li>
-      <li>إدارة المستخدمين والصلاحيات عبر <strong>Active Directory</strong>.</li>
-      <li>استكشاف أعطال الشبكات ومتابعة النسخ الاحتياطية وضمان استقرارها.</li>
+      <li data-e>الدعم الفني للموظفين وحل مشاكل الحواسيب والبرمجيات.</li>
+      <li data-e>تركيب وإعداد أنظمة البصمة وكاميرات المراقبة.</li>
+      <li data-e>إدارة المستخدمين والصلاحيات عبر <strong>Active Directory</strong>.</li>
+      <li data-e>استكشاف أعطال الشبكات ومتابعة النسخ الاحتياطية وضمان استقرارها.</li>
     </ul>
   </div>
 
-  <h2>المشاريع</h2>
+  </div>
+  <h2 data-e>المشاريع</h2>
+  <div class="tools"><button type="button" data-add="proj">+ مشروع</button></div>
+  <div data-list="proj">
 
-  <div class="proj">
-    <div class="proj-top"><h3>روبوت الاستقبال الذكي (MIRA) <span class="win">المركز الأول</span></h3><div class="when">2023 – 2024</div></div>
-    <p>مطور ومشرف فريق. برمجة أجزاء من النظام وحل مشاكل التكامل بين العتاد والبرمجيات، والإشراف على فريق من <strong>12 عضواً</strong>، وإدارة الميزانية. حصد المركز الأول على مستوى مشاريع التخرج.</p>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>روبوت الاستقبال الذكي (MIRA) <span class="win" data-e>المركز الأول</span></h3><div class="when" data-e>2023 – 2024</div></div>
+    <p data-e>مطور ومشرف فريق. برمجة أجزاء من النظام وحل مشاكل التكامل بين العتاد والبرمجيات، والإشراف على فريق من <strong>12 عضواً</strong>، وإدارة الميزانية. حصد المركز الأول على مستوى مشاريع التخرج.</p>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>متجر الضيافة — منصة تجارة إلكترونية</h3><div class="when">2026</div></div>
-    <p>منصة Headless Commerce كاملة مع ست إضافات مخصصة (طلب عروض أسعار، سعة الحجز، جدولة المطبخ، تقارير المبيعات، تقييمات المنتجات)، وتطبيق PWA يعمل دون اتصال ويدعم لغتين.</p>
-    <div class="tech">Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>متجر الضيافة — منصة تجارة إلكترونية</h3><div class="when" data-e>2026</div></div>
+    <p data-e>منصة Headless Commerce كاملة مع ست إضافات مخصصة (طلب عروض أسعار، سعة الحجز، جدولة المطبخ، تقارير المبيعات، تقييمات المنتجات)، وتطبيق PWA يعمل دون اتصال ويدعم لغتين.</p>
+    <div class="tech" data-e>Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
   </div>
 
-  <div class="proj role-dev">
-    <div class="proj-top"><h3>عقارX — منصة عقارات</h3><div class="when">2026</div></div>
-    <p>مصادقة عبر OTP مع JWT، إدارة العقارات ورفع الصور، نشر الإعلانات والبحث الجغرافي بالخريطة، المفضلة، ولوحة مراجعة إدارية بصلاحيات صارمة.</p>
-    <div class="tech">NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
+  <div class="proj role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>عقارX — منصة عقارات</h3><div class="when" data-e>2026</div></div>
+    <p data-e>مصادقة عبر OTP مع JWT، إدارة العقارات ورفع الصور، نشر الإعلانات والبحث الجغرافي بالخريطة، المفضلة، ولوحة مراجعة إدارية بصلاحيات صارمة.</p>
+    <div class="tech" data-e>NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
   </div>
 
-  <div class="proj role-dev">
-    <div class="proj-top"><h3>Abdullah AI — وكيل تنفيذي</h3><div class="when">2026</div></div>
-    <p>معمارية إنتاجية: Orchestrator، ذاكرة مصنّفة، بوابة موافقة بشرية قبل أي عملية حساسة، وسجل تدقيق كامل — خلف واجهة واحدة تدعم عدة مزودي ذكاء اصطناعي.</p>
-    <div class="tech">NestJS · TypeORM · Multi-Provider AI</div>
+  <div class="proj role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>Abdullah AI — وكيل تنفيذي</h3><div class="when" data-e>2026</div></div>
+    <p data-e>معمارية إنتاجية: Orchestrator، ذاكرة مصنّفة، بوابة موافقة بشرية قبل أي عملية حساسة، وسجل تدقيق كامل — خلف واجهة واحدة تدعم عدة مزودي ذكاء اصطناعي.</p>
+    <div class="tech" data-e>NestJS · TypeORM · Multi-Provider AI</div>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>ميدان — نظام الاستجابة الميدانية اللحظي</h3><div class="when">2026</div></div>
-    <p>نظام يربط غرفة التحكم بمراقبي لجان الاختبارات عبر قناة لحظية موثّقة، بدل الاتصال الهاتفي والورق.</p>
-    <div class="tech">React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>ميدان — نظام الاستجابة الميدانية اللحظي</h3><div class="when" data-e>2026</div></div>
+    <p data-e>نظام يربط غرفة التحكم بمراقبي لجان الاختبارات عبر قناة لحظية موثّقة، بدل الاتصال الهاتفي والورق.</p>
+    <div class="tech" data-e>React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>أتمتة وتحليل بيانات الفروع (BI)</h3><div class="when">2026</div></div>
-    <p>توحيد وتنظيف بيانات <strong>11 فرعاً</strong> عبر Power Query مع تحقق آلي من سلامة الأرقام، وبناء لوحات مبيعات تفاعلية — حوّل التقرير الشهري من ساعات يدوية إلى تحديث بضغطة زر.</p>
-    <div class="tech">Power BI · Power Query · DAX · Excel · VBA</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>أتمتة وتحليل بيانات الفروع (BI)</h3><div class="when" data-e>2026</div></div>
+    <p data-e>توحيد وتنظيف بيانات <strong>11 فرعاً</strong> عبر Power Query مع تحقق آلي من سلامة الأرقام، وبناء لوحات مبيعات تفاعلية — حوّل التقرير الشهري من ساعات يدوية إلى تحديث بضغطة زر.</p>
+    <div class="tech" data-e>Power BI · Power Query · DAX · Excel · VBA</div>
   </div>
 
-  <div class="proj role-it">
-    <div class="proj-top"><h3>دراسة وتصميم شبكة محلية (LAN)</h3><div class="when">2024</div></div>
-    <p>مسح ميداني، تصميم طوبولوجيا الشبكة، تقدير الاحتياجات والمعدات، وتركيب الأجهزة وتجهيز بيئة العمل.</p>
+  <div class="proj role-it item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>دراسة وتصميم شبكة محلية (LAN)</h3><div class="when" data-e>2024</div></div>
+    <p data-e>مسح ميداني، تصميم طوبولوجيا الشبكة، تقدير الاحتياجات والمعدات، وتركيب الأجهزة وتجهيز بيئة العمل.</p>
   </div>
 
-  <h2>المهارات</h2>
+  </div>
+  <h2 data-e>المهارات</h2>
   <dl class="sk">
-    <dt class="role-dev">البرمجة والتطوير</dt>
-    <dd class="role-dev">JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
-    <dt class="role-dev">قواعد البيانات</dt>
-    <dd class="role-dev">PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
-    <dt class="role-it">الدعم الفني والتشغيل</dt>
-    <dd class="role-it">تشخيص أعطال الأجهزة والبرمجيات · الدعم عن بُعد · دعم نقاط البيع (POS) · الطابعات · تركيب الأنظمة (Windows 10/11)</dd>
-    <dt>أنظمة وإدارة IT</dt>
-    <dd>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
-    <dt>الشبكات والبنية التحتية</dt>
-    <dd>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · تمديد الكابلات · إعداد Wi-Fi</dd>
-    <dt>أنظمة المراقبة والأمن</dt>
-    <dd>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · أنظمة البصمة (Biometric)</dd>
-    <dt>تحليل البيانات</dt>
-    <dd>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
-    <dt>الأدوات</dt>
-    <dd>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
-    <dt class="role-dev">الذكاء الاصطناعي</dt>
-    <dd class="role-dev">Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
-    <dt>المهارات الشخصية</dt>
-    <dd>حل المشكلات وتحليل جذر العطل · العمل ضمن فريق وقيادته · تحمّل ضغط العمل والمهام المتزامنة · التعلّم الذاتي السريع لأي تقنية جديدة · التواصل والتدريب التقني · إدارة الوقت وترتيب الأولويات · الدقة في التوثيق والمتابعة</dd>
-    <dt>اللغات</dt>
-    <dd>العربية (اللغة الأم) · الإنجليزية (مستوى جيد)</dd>
+    <dt class="role-dev" data-e>البرمجة والتطوير</dt>
+    <dd class="role-dev" data-e>JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
+    <dt class="role-dev" data-e>قواعد البيانات</dt>
+    <dd class="role-dev" data-e>PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
+    <dt class="role-it" data-e>الدعم الفني والتشغيل</dt>
+    <dd class="role-it" data-e>تشخيص أعطال الأجهزة والبرمجيات · الدعم عن بُعد · دعم نقاط البيع (POS) · الطابعات · تركيب الأنظمة (Windows 10/11)</dd>
+    <dt data-e>أنظمة وإدارة IT</dt>
+    <dd data-e>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
+    <dt data-e>الشبكات والبنية التحتية</dt>
+    <dd data-e>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · تمديد الكابلات · إعداد Wi-Fi</dd>
+    <dt data-e>أنظمة المراقبة والأمن</dt>
+    <dd data-e>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · أنظمة البصمة (Biometric)</dd>
+    <dt data-e>تحليل البيانات</dt>
+    <dd data-e>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
+    <dt data-e>الأدوات</dt>
+    <dd data-e>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
+    <dt class="role-dev" data-e>الذكاء الاصطناعي</dt>
+    <dd class="role-dev" data-e>Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
+    <dt data-e>المهارات الشخصية</dt>
+    <dd data-e>حل المشكلات وتحليل جذر العطل · العمل ضمن فريق وقيادته · تحمّل ضغط العمل والمهام المتزامنة · التعلّم الذاتي السريع لأي تقنية جديدة · التواصل والتدريب التقني · إدارة الوقت وترتيب الأولويات · الدقة في التوثيق والمتابعة</dd>
+    <dt data-e>اللغات</dt>
+    <dd data-e>العربية (اللغة الأم) · الإنجليزية (مستوى جيد)</dd>
   </dl>
 
-  <h2>التعليم</h2>
-  <div class="cert"><span><strong>بكالوريوس تقنية المعلومات</strong> — الجامعة الوطنية، تعز (الفرع الرئيسي)</span><span class="when">2021 – 2024</span></div>
+  <h2 data-e>التعليم</h2>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>بكالوريوس تقنية المعلومات</strong> — الجامعة الوطنية، تعز (الفرع الرئيسي)</span><span class="when" data-e>2021 – 2024</span></div>
 
-  <h2>الشهادات والدورات</h2>
-  <div class="cert"><span><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum، إدارة المخاطر، الجداول، أدوات PM</span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>Crash Course on Python</strong></span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>دورة عملي شبكات</strong> — 70 ساعة · بتقدير 96% (ممتاز)</span><span class="when">2024</span></div>
-  <div class="cert"><span><strong>أنظمة المراقبة (CCTV)</strong> — المركز العالمي للتدريب والتطوير · 45 ساعة · بتقدير 90% · أنظمة IP و Analog متعددة العلامات (Hikvision · Dahua · D-Link)</span><span class="when">ديسمبر 2025 – يناير 2026</span></div>
+  <h2 data-e>الشهادات والدورات</h2>
+  <div class="tools"><button type="button" data-add="cert">+ شهادة</button></div>
+  <div data-list="cert">
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum، إدارة المخاطر، الجداول، أدوات PM</span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Crash Course on Python</strong></span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>دورة عملي شبكات</strong> — 70 ساعة · بتقدير 96% (ممتاز)</span><span class="when" data-e>2024</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>أنظمة المراقبة (CCTV)</strong> — المركز العالمي للتدريب والتطوير · 45 ساعة · بتقدير 90% · أنظمة IP و Analog متعددة العلامات (Hikvision · Dahua · D-Link)</span><span class="when" data-e>ديسمبر 2025 – يناير 2026</span></div>
+  </div>
 </div>
 
-<!-- ══════════════ English ══════════════ -->
 <div class="page hide" id="p-en">
   <div class="hdr">
-    <h1>Abdullah Murad Hail Mohammed</h1>
-    <div class="title role-dev">IT Engineer · Full-Stack Software Developer</div>
-    <div class="title role-it hide">IT Support Specialist · IT Systems Administrator</div>
+    <h1 data-e>Abdullah Murad Hail Mohammed</h1>
+    <div class="title role-dev" data-e>IT Engineer · Full-Stack Software Developer</div>
+    <div class="title role-it hide" data-e>IT Support Specialist · IT Systems Administrator</div>
     <div class="contact">
-      <span>📍 Riyadh, Saudi Arabia</span>
-      <span>📞 +966 53 809 3956</span>
-      <a href="mailto:abdullahmuradbus@gmail.com">✉️ abdullahmuradbus@gmail.com</a>
-      <a href="https://abdullahmurad73.github.io">🌐 abdullahmurad73.github.io</a>
-      <a href="https://myportfolioabdullahm.kesug.com">🎨 myportfolioabdullahm.kesug.com</a>
-      <a href="https://github.com/AbdullahMurad73">💻 github.com/AbdullahMurad73</a>
-      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420">🔗 LinkedIn</a>
+      <span data-e>📍 Riyadh, Saudi Arabia</span>
+      <span data-e>📞 +966 53 809 3956</span>
+      <a href="mailto:abdullahmuradbus@gmail.com" data-e>✉️ abdullahmuradbus@gmail.com</a>
+      <a href="https://abdullahmurad73.github.io" data-e>🌐 abdullahmurad73.github.io</a>
+      <a href="https://myportfolioabdullahm.kesug.com" data-e>🎨 myportfolioabdullahm.kesug.com</a>
+      <a href="https://github.com/AbdullahMurad73" data-e>💻 github.com/AbdullahMurad73</a>
+      <a href="https://www.linkedin.com/in/abdullah-murad-hael-15a214420" data-e>🔗 LinkedIn</a>
     </div>
   </div>
 
-  <h2>Professional Summary</h2>
-  <p class="summary role-dev">
+  <h2 data-e>Professional Summary</h2>
+  <p class="summary role-dev" data-e>
     IT Engineer and Full-Stack Developer with 2 years of hands-on experience designing and
     building enterprise systems and web applications. Delivered headless e-commerce platforms,
     real-estate marketplaces, and real-time response systems — from database design through
@@ -355,7 +399,7 @@ h2{
     infrastructure, networking, and surveillance systems, producing solutions that are built
     to be operated and maintained, not just to compile.
   </p>
-  <p class="summary role-it hide">
+  <p class="summary role-it hide" data-e>
     IT Support Specialist with 2 years of hands-on experience managing corporate
     infrastructure and multi-branch network environments across 11 branches. Administered
     CCTV, biometric, POS, and server systems in production environments. Combines intensive
@@ -363,168 +407,332 @@ h2{
     and resolving faults at the root rather than the symptom.
   </p>
 
-  <h2>Professional Experience</h2>
+  <h2 data-e>Professional Experience</h2>
+  <div class="tools"><button type="button" data-add="job">+ Job</button></div>
+  <div data-list="job">
 
-  <div class="job role-dev">
-    <div class="job-top"><div><h3>Full-Stack Developer</h3><div class="org">Freelance · Remote</div></div><div class="when">2022 – Present</div></div>
+  <div class="job role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>Full-Stack Developer</h3><div class="org" data-e>Freelance · Remote</div></div><div class="when" data-e>2022 – Present</div></div>
     <ul>
-      <li>Developed custom web applications and administrative systems to client specifications.</li>
-      <li>Designed full-stack architectures, built REST APIs, and integrated third-party services.</li>
-      <li>Designed and managed database systems ensuring data integrity and scalability.</li>
-      <li>Conducted system testing, performance tuning, and UX improvements.</li>
-      <li>Managed version control via Git/GitHub and provided post-deployment support.</li>
+      <li data-e>Developed custom web applications and administrative systems to client specifications.</li>
+      <li data-e>Designed full-stack architectures, built REST APIs, and integrated third-party services.</li>
+      <li data-e>Designed and managed database systems ensuring data integrity and scalability.</li>
+      <li data-e>Conducted system testing, performance tuning, and UX improvements.</li>
+      <li data-e>Managed version control via Git/GitHub and provided post-deployment support.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>IT Support &amp; Systems Administrator</h3><div class="org">Maaslat Company — Dammam, KSA</div></div><div class="when">2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>IT Support &amp; Systems Administrator</h3><div class="org" data-e>Maaslat Company — Dammam, KSA</div></div><div class="when" data-e>2026</div></div>
     <ul>
-      <li>Provided comprehensive IT support across <strong>11+ commercial branches</strong>.</li>
-      <li>Resolved hardware, printer, and Point-of-Sale (POS) issues ensuring uninterrupted operations.</li>
-      <li>Managed and maintained centralized CCTV surveillance and security systems.</li>
-      <li>Troubleshot and optimized multi-branch network infrastructure and remote connectivity.</li>
-      <li class="role-it">Managed helpdesk ticketing workflows and executed preventive maintenance.</li>
+      <li data-e>Provided comprehensive IT support across <strong>11+ commercial branches</strong>.</li>
+      <li data-e>Resolved hardware, printer, and Point-of-Sale (POS) issues ensuring uninterrupted operations.</li>
+      <li data-e>Managed and maintained centralized CCTV surveillance and security systems.</li>
+      <li data-e>Troubleshot and optimized multi-branch network infrastructure and remote connectivity.</li>
+      <li class="role-it" data-e>Managed helpdesk ticketing workflows and executed preventive maintenance.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>IT Support &amp; Technical Specialist</h3><div class="org">Nasser Technology — Al-Qassim, KSA</div></div><div class="when">2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>IT Support &amp; Technical Specialist</h3><div class="org" data-e>Nasser Technology — Al-Qassim, KSA</div></div><div class="when" data-e>2026</div></div>
     <ul>
-      <li>Delivered remote and on-site technical support for corporate and retail customers.</li>
-      <li>Diagnosed and repaired hardware malfunctions and software configuration errors.</li>
-      <li class="role-it">Executed backup and recovery workflows, OS installation, and small-business network setup.</li>
+      <li data-e>Delivered remote and on-site technical support for corporate and retail customers.</li>
+      <li data-e>Diagnosed and repaired hardware malfunctions and software configuration errors.</li>
+      <li class="role-it" data-e>Executed backup and recovery workflows, OS installation, and small-business network setup.</li>
     </ul>
   </div>
 
-  <div class="job">
-    <div class="job-top"><div><h3>IT Support &amp; Technical Training</h3><div class="org">Hayel Saeed Anam Group (HSA)</div></div><div class="when">2025 – 2026</div></div>
+  <div class="job item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="job-top"><div data-e><h3 data-e>IT Support &amp; Technical Training</h3><div class="org" data-e>Hayel Saeed Anam Group (HSA)</div></div><div class="when" data-e>2025 – 2026</div></div>
     <ul>
-      <li>Provided technical support to employees, resolving hardware and software issues.</li>
-      <li>Installed and configured biometric time-attendance and CCTV surveillance systems.</li>
-      <li>Administered user accounts and access permissions via <strong>Active Directory</strong>.</li>
-      <li>Performed network troubleshooting and monitored automated backup procedures.</li>
+      <li data-e>Provided technical support to employees, resolving hardware and software issues.</li>
+      <li data-e>Installed and configured biometric time-attendance and CCTV surveillance systems.</li>
+      <li data-e>Administered user accounts and access permissions via <strong>Active Directory</strong>.</li>
+      <li data-e>Performed network troubleshooting and monitored automated backup procedures.</li>
     </ul>
   </div>
 
-  <h2>Projects</h2>
+  </div>
+  <h2 data-e>Projects</h2>
+  <div class="tools"><button type="button" data-add="proj">+ Project</button></div>
+  <div data-list="proj">
 
-  <div class="proj">
-    <div class="proj-top"><h3>MIRA — Smart Reception Robot <span class="win">1st Place</span></h3><div class="when">2023 – 2024</div></div>
-    <p>Developer &amp; Team Supervisor. Programmed core system modules and resolved hardware–software integration challenges. Supervised a <strong>12-member</strong> multidisciplinary team and managed the project budget. Awarded 1st place university-wide for graduation projects.</p>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>MIRA — Smart Reception Robot <span class="win" data-e>1st Place</span></h3><div class="when" data-e>2023 – 2024</div></div>
+    <p data-e>Developer &amp; Team Supervisor. Programmed core system modules and resolved hardware–software integration challenges. Supervised a <strong>12-member</strong> multidisciplinary team and managed the project budget. Awarded 1st place university-wide for graduation projects.</p>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>Aldiyafa Store — E-commerce Platform</h3><div class="when">2026</div></div>
-    <p>Full headless commerce platform with six custom plugins (quote requests, booking capacity, kitchen scheduling, sales reporting, product reviews) and an offline-capable bilingual PWA.</p>
-    <div class="tech">Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>Aldiyafa Store — E-commerce Platform</h3><div class="when" data-e>2026</div></div>
+    <p data-e>Full headless commerce platform with six custom plugins (quote requests, booking capacity, kitchen scheduling, sales reporting, product reviews) and an offline-capable bilingual PWA.</p>
+    <div class="tech" data-e>Vendure · Next.js 16 · React 19 · PostgreSQL · GraphQL · Docker</div>
   </div>
 
-  <div class="proj role-dev">
-    <div class="proj-top"><h3>AqarX — Real Estate Platform</h3><div class="when">2026</div></div>
-    <p>OTP authentication with JWT, property management with image uploads, listing publication with map-based geographic search, favorites, and an admin review workflow with strict role enforcement.</p>
-    <div class="tech">NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
+  <div class="proj role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>AqarX — Real Estate Platform</h3><div class="when" data-e>2026</div></div>
+    <p data-e>OTP authentication with JWT, property management with image uploads, listing publication with map-based geographic search, favorites, and an admin review workflow with strict role enforcement.</p>
+    <div class="tech" data-e>NestJS · TypeORM · PostgreSQL · Redis · Docker</div>
   </div>
 
-  <div class="proj role-dev">
-    <div class="proj-top"><h3>Abdullah AI — Executive Agent</h3><div class="when">2026</div></div>
-    <p>Production-grade architecture: orchestrator, categorized memory, human-in-the-loop approval gate before any sensitive operation, and full audit logging — behind a single multi-provider AI interface.</p>
-    <div class="tech">NestJS · TypeORM · Multi-Provider AI</div>
+  <div class="proj role-dev item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>Abdullah AI — Executive Agent</h3><div class="when" data-e>2026</div></div>
+    <p data-e>Production-grade architecture: orchestrator, categorized memory, human-in-the-loop approval gate before any sensitive operation, and full audit logging — behind a single multi-provider AI interface.</p>
+    <div class="tech" data-e>NestJS · TypeORM · Multi-Provider AI</div>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>Midan — Real-Time Field Response System</h3><div class="when">2026</div></div>
-    <p>Connects the control room to exam committee supervisors through a single documented real-time channel, replacing phone calls and paper forms.</p>
-    <div class="tech">React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>Midan — Real-Time Field Response System</h3><div class="when" data-e>2026</div></div>
+    <p data-e>Connects the control room to exam committee supervisors through a single documented real-time channel, replacing phone calls and paper forms.</p>
+    <div class="tech" data-e>React 19 (Vite) · Node.js · Express · PostgreSQL · Socket.io</div>
   </div>
 
-  <div class="proj">
-    <div class="proj-top"><h3>Branch Data Automation &amp; BI</h3><div class="when">2026</div></div>
-    <p>Consolidated and cleansed data across <strong>11 branches</strong> via Power Query with automated integrity validation, and built interactive sales dashboards — turning hours of manual monthly reporting into a one-click refresh.</p>
-    <div class="tech">Power BI · Power Query · DAX · Excel · VBA</div>
+  <div class="proj item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>Branch Data Automation &amp; BI</h3><div class="when" data-e>2026</div></div>
+    <p data-e>Consolidated and cleansed data across <strong>11 branches</strong> via Power Query with automated integrity validation, and built interactive sales dashboards — turning hours of manual monthly reporting into a one-click refresh.</p>
+    <div class="tech" data-e>Power BI · Power Query · DAX · Excel · VBA</div>
   </div>
 
-  <div class="proj role-it">
-    <div class="proj-top"><h3>LAN Design &amp; Implementation</h3><div class="when">2024</div></div>
-    <p>Site survey, network topology design, hardware capacity planning, and physical device deployment.</p>
+  <div class="proj role-it item"><button class="x" title="حذف" type="button">✕</button>
+    <div class="proj-top"><h3 data-e>LAN Design &amp; Implementation</h3><div class="when" data-e>2024</div></div>
+    <p data-e>Site survey, network topology design, hardware capacity planning, and physical device deployment.</p>
   </div>
 
-  <h2>Skills</h2>
+  </div>
+  <h2 data-e>Skills</h2>
   <dl class="sk">
-    <dt class="role-dev">Development</dt>
-    <dd class="role-dev">JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
-    <dt class="role-dev">Databases</dt>
-    <dd class="role-dev">PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
-    <dt class="role-it">Support &amp; Operations</dt>
-    <dd class="role-it">Hardware &amp; Software Troubleshooting · Remote Support · POS Systems · Printers · System Installation (Windows 10/11)</dd>
-    <dt>IT &amp; Systems Administration</dt>
-    <dd>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
-    <dt>Networking &amp; Infrastructure</dt>
-    <dd>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · Network Cabling · Wi-Fi Configuration</dd>
-    <dt>Surveillance &amp; Security</dt>
-    <dd>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · Biometric Systems</dd>
-    <dt>Data &amp; BI</dt>
-    <dd>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
-    <dt>Tools</dt>
-    <dd>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
-    <dt class="role-dev">AI</dt>
-    <dd class="role-dev">Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
-    <dt>Soft Skills</dt>
-    <dd>Problem solving &amp; root-cause analysis · Teamwork and team leadership · Works well under pressure and parallel tasks · Fast self-learner of new technologies · Communication &amp; technical training · Time management and prioritization · Accuracy in documentation and follow-up</dd>
-    <dt>Languages</dt>
-    <dd>Arabic (Native) · English (Good)</dd>
+    <dt class="role-dev" data-e>Development</dt>
+    <dd class="role-dev" data-e>JavaScript · TypeScript · Python · PHP · React · Next.js · Node.js · NestJS · Express · Tailwind CSS · REST APIs · GraphQL</dd>
+    <dt class="role-dev" data-e>Databases</dt>
+    <dd class="role-dev" data-e>PostgreSQL · MySQL · SQL Server · Oracle · MongoDB · Redis · Firebase</dd>
+    <dt class="role-it" data-e>Support &amp; Operations</dt>
+    <dd class="role-it" data-e>Hardware &amp; Software Troubleshooting · Remote Support · POS Systems · Printers · System Installation (Windows 10/11)</dd>
+    <dt data-e>IT &amp; Systems Administration</dt>
+    <dd data-e>Windows Server · Active Directory · Microsoft 365 · Odoo ERP · Oracle ERP · Onyx Pro · Backup &amp; Recovery</dd>
+    <dt data-e>Networking &amp; Infrastructure</dt>
+    <dd data-e>LAN / WAN · TCP/IP · Routers &amp; Switches · TP-Link · Huawei · Network Cabling · Wi-Fi Configuration</dd>
+    <dt data-e>Surveillance &amp; Security</dt>
+    <dd data-e>CCTV (Hikvision · Dahua · D-Link) · iVMS-4200 · Biometric Systems</dd>
+    <dt data-e>Data &amp; BI</dt>
+    <dd data-e>Power BI · Power Query · DAX · Advanced Excel · VBA</dd>
+    <dt data-e>Tools</dt>
+    <dd data-e>Git · GitHub · Docker · Postman · MQTT · Arduino IDE · AWS &amp; Azure Fundamentals</dd>
+    <dt class="role-dev" data-e>AI</dt>
+    <dd class="role-dev" data-e>Claude AI · ChatGPT · GitHub Copilot · Prompt Engineering · AI-Assisted Development</dd>
+    <dt data-e>Soft Skills</dt>
+    <dd data-e>Problem solving &amp; root-cause analysis · Teamwork and team leadership · Works well under pressure and parallel tasks · Fast self-learner of new technologies · Communication &amp; technical training · Time management and prioritization · Accuracy in documentation and follow-up</dd>
+    <dt data-e>Languages</dt>
+    <dd data-e>Arabic (Native) · English (Good)</dd>
   </dl>
 
-  <h2>Education</h2>
-  <div class="cert"><span><strong>B.Sc. in Information Technology</strong> — National University, Taiz (Main Branch)</span><span class="when">2021 – 2024</span></div>
+  <h2 data-e>Education</h2>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>B.Sc. in Information Technology</strong> — National University, Taiz (Main Branch)</span><span class="when" data-e>2021 – 2024</span></div>
 
-  <h2>Certifications</h2>
-  <div class="cert"><span><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum, Risk Management, Scheduling, PM Tools</span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>Crash Course on Python</strong></span><span class="when">2025</span></div>
-  <div class="cert"><span><strong>Practical Networking Course</strong> — 70 hours · Grade 96% (Excellent)</span><span class="when">2024</span></div>
-  <div class="cert"><span><strong>Surveillance Systems (CCTV)</strong> — Global International Training Center · 45 hours · Grade 90% · Multi-brand IP &amp; Analog (Hikvision · Dahua · D-Link)</span><span class="when">Dec 2025 – Jan 2026</span></div>
+  <h2 data-e>Certifications</h2>
+  <div class="tools"><button type="button" data-add="cert">+ Certificate</button></div>
+  <div data-list="cert">
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Google Project Management</strong> — Professional Certificate, Coursera · Agile/Scrum, Risk Management, Scheduling, PM Tools</span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Google Digital Marketing &amp; E-commerce</strong> — Coursera</span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Crash Course on Python</strong></span><span class="when" data-e>2025</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Practical Networking Course</strong> — 70 hours · Grade 96% (Excellent)</span><span class="when" data-e>2024</span></div>
+  <div class="cert item"><button class="x" title="حذف" type="button">✕</button><span data-e><strong>Surveillance Systems (CCTV)</strong> — Global International Training Center · 45 hours · Grade 90% · Multi-brand IP &amp; Analog (Hikvision · Dahua · D-Link)</span><span class="when" data-e>Dec 2025 – Jan 2026</span></div>
+  </div>
 </div>
 
+<input type="file" id="file-in" accept=".json" hidden>
+<div id="toast"></div>
 
-
-
-</div>
 <script>
-var lang="ar", role="dev";
-function apply(){
-  document.getElementById("cvroot").className = lang;
-  document.getElementById("cvroot").setAttribute("data-role", role);
-  document.getElementById("p-ar").classList.toggle("hide", lang!=="ar");
-  document.getElementById("p-en").classList.toggle("hide", lang!=="en");
-  document.getElementById("b-ar").classList.toggle("on", lang==="ar");
-  document.getElementById("b-en").classList.toggle("on", lang==="en");
-  document.getElementById("b-dev").classList.toggle("on", role==="dev");
-  document.getElementById("b-it").classList.toggle("on", role==="it");
-  var els = document.querySelectorAll(".role-dev, .role-it");
-  for (var i=0;i<els.length;i++){
-    var wantDev = els[i].classList.contains("role-dev");
-    els[i].classList.toggle("hide", wantDev ? role!=="dev" : role!=="it");
+(function(){
+  "use strict";
+  var KEY = "cv-abdullah-v1";
+  var $ = function(id){ return document.getElementById(id); };
+  var body = document.body;
+  var pAr = $("p-ar"), pEn = $("p-en");
+  var lang = "ar", role = "dev", scale = 1;
+  var original = { ar: pAr.innerHTML, en: pEn.innerHTML };
+
+  function toast(m){
+    var t = $("toast"); t.textContent = m; t.classList.add("show");
+    clearTimeout(t._t); t._t = setTimeout(function(){ t.classList.remove("show"); }, 1800);
   }
-  document.title = (lang==="ar" ? "السيرة الذاتية — عبدالله مراد هائل محمد"
-                                : "CV — Abdullah Murad Hail Mohammed");
-  try{ localStorage.setItem("cv", lang+"|"+role); }catch(e){}
-}
-function setLang(l){ lang=l; apply(); }
-function setRole(r){ role=r; apply(); }
-try{
-  var v=localStorage.getItem("cv");
-  if(v){ var p=v.split("|"); lang=p[0]||"ar"; role=p[1]||"dev"; }
-}catch(e){}
-apply();
 
-// ربط الأزرار (بدل onclick المضمّنة — سياسة CSP تمنعها)
-document.getElementById("b-ar").addEventListener("click", function(){ setLang("ar"); });
-document.getElementById("b-en").addEventListener("click", function(){ setLang("en"); });
-document.getElementById("b-dev").addEventListener("click", function(){ setRole("dev"); });
-document.getElementById("b-it").addEventListener("click", function(){ setRole("it"); });
-document.querySelector(".bar .print").addEventListener("click", function(){ window.print(); });
+  /* ═══ اللغة والتخصص ═══ */
+  function apply(){
+    body.className = lang + (body.classList.contains("edit-on") ? " edit-on" : "");
+    body.setAttribute("data-role", role);
+    pAr.classList.toggle("hide", lang !== "ar");
+    pEn.classList.toggle("hide", lang !== "en");
+    $("b-ar").classList.toggle("on", lang === "ar");
+    $("b-en").classList.toggle("on", lang === "en");
+    $("b-dev").classList.toggle("on", role === "dev");
+    $("b-it").classList.toggle("on", role === "it");
+    var els = document.querySelectorAll(".role-dev, .role-it");
+    for (var i = 0; i < els.length; i++){
+      var wantDev = els[i].classList.contains("role-dev");
+      els[i].classList.toggle("hide", wantDev ? role !== "dev" : role !== "it");
+    }
+    document.title = lang === "ar"
+      ? "السيرة الذاتية — عبدالله مراد هائل محمد"
+      : "CV — Abdullah Murad Hail Mohammed";
+    save(true);
+  }
+  $("b-ar").onclick = function(){ lang = "ar"; apply(); };
+  $("b-en").onclick = function(){ lang = "en"; apply(); };
+  $("b-dev").onclick = function(){ role = "dev"; apply(); };
+  $("b-it").onclick  = function(){ role = "it";  apply(); };
 
+  /* ═══ الخطوط والحجم ═══ */
+  function setFonts(){
+    document.documentElement.style.setProperty("--font-ar", '"' + $("font-ar").value + '"');
+    document.documentElement.style.setProperty("--font-en", '"' + $("font-en").value + '"');
+    save(true);
+  }
+  $("font-ar").onchange = setFonts;
+  $("font-en").onchange = setFonts;
+
+  function setScale(v){
+    scale = Math.min(1.25, Math.max(0.8, Math.round(v * 100) / 100));
+    document.documentElement.style.setProperty("--scale", scale);
+    toast("الحجم " + Math.round(scale * 100) + "%");
+    save(true);
+  }
+  $("sz-up").onclick   = function(){ setScale(scale + 0.05); };
+  $("sz-down").onclick = function(){ setScale(scale - 0.05); };
+
+  /* ═══ وضع التحرير ═══ */
+  function setEditable(on){
+    var t = pAr.querySelectorAll("[data-e]"), u = pEn.querySelectorAll("[data-e]");
+    [].forEach.call(t, function(e){ e.contentEditable = on; });
+    [].forEach.call(u, function(e){ e.contentEditable = on; });
+    body.classList.toggle("edit-on", on);
+    $("toggle-edit").classList.toggle("on", on);
+  }
+  $("toggle-edit").onclick = function(){
+    var on = !body.classList.contains("edit-on");
+    setEditable(on);
+    toast(on ? "وضع التحرير مفعّل" : "وضع العرض");
+  };
+
+  /* ═══ الإضافة والحذف ═══ */
+  document.addEventListener("click", function(ev){
+    var add = ev.target.closest("[data-add]");
+    if (add){
+      var list = add.closest("section, .block, div").querySelector("[data-list='" + add.dataset.add + "']")
+              || document.querySelector("[data-list='" + add.dataset.add + "']");
+      if (!list) return;
+      var last = list.querySelector(".item:last-of-type");
+      if (!last) return;
+      var copy = last.cloneNode(true);
+      copy.classList.remove("hide");
+      [].forEach.call(copy.querySelectorAll("[data-e]"), function(e){
+        e.contentEditable = body.classList.contains("edit-on");
+      });
+      last.parentNode.insertBefore(copy, last.nextSibling);
+      var first = copy.querySelector("[data-e]");
+      if (first) first.focus();
+      toast("أُضيف عنصر — عدّله الآن");
+      return;
+    }
+    var x = ev.target.closest(".item .x");
+    if (x){
+      var item = x.closest(".item");
+      var siblings = item.parentNode.querySelectorAll(".item");
+      if (siblings.length <= 1){ toast("لا يمكن حذف آخر عنصر"); return; }
+      item.remove();
+      toast("حُذف");
+    }
+  });
+
+  /* ═══ الحفظ ═══ */
+  function snapshot(){
+    return {
+      ar: pAr.innerHTML, en: pEn.innerHTML,
+      lang: lang, role: role, scale: scale,
+      fontAr: $("font-ar").value, fontEn: $("font-en").value,
+      at: new Date().toISOString()
+    };
+  }
+  function save(silent){
+    try {
+      localStorage.setItem(KEY, JSON.stringify(snapshot()));
+      if (!silent) toast("حُفظ ✓");
+    } catch(e){ if (!silent) toast("تعذّر الحفظ في المتصفح"); }
+  }
+  $("save").onclick = function(){ save(false); };
+
+  // حفظ تلقائي بعد التوقف عن الكتابة
+  var autoT;
+  document.addEventListener("input", function(){
+    clearTimeout(autoT); autoT = setTimeout(function(){ save(true); }, 1200);
+  });
+
+  function restore(){
+    var raw = null;
+    try { raw = localStorage.getItem(KEY); } catch(e){}
+    if (!raw) return false;
+    try {
+      var d = JSON.parse(raw);
+      if (d.ar) pAr.innerHTML = d.ar;
+      if (d.en) pEn.innerHTML = d.en;
+      lang = d.lang || "ar"; role = d.role || "dev";
+      if (d.fontAr) $("font-ar").value = d.fontAr;
+      if (d.fontEn) $("font-en").value = d.fontEn;
+      scale = d.scale || 1;
+      return true;
+    } catch(e){ return false; }
+  }
+
+  /* ═══ نسخة احتياطية ═══ */
+  $("export").onclick = function(){
+    var blob = new Blob([JSON.stringify(snapshot(), null, 2)], {type:"application/json"});
+    var a = document.createElement("a");
+    a.href = URL.createObjectURL(blob);
+    a.download = "cv-backup-" + new Date().toISOString().slice(0,10) + ".json";
+    document.body.appendChild(a); a.click();
+    setTimeout(function(){ URL.revokeObjectURL(a.href); a.remove(); }, 1000);
+    toast("نُزّلت نسخة احتياطية");
+  };
+  $("import").onclick = function(){ $("file-in").click(); };
+  $("file-in").onchange = function(e){
+    var f = e.target.files[0]; if (!f) return;
+    var r = new FileReader();
+    r.onload = function(){
+      try {
+        var d = JSON.parse(r.result);
+        if (d.ar) pAr.innerHTML = d.ar;
+        if (d.en) pEn.innerHTML = d.en;
+        if (d.fontAr) $("font-ar").value = d.fontAr;
+        if (d.fontEn) $("font-en").value = d.fontEn;
+        lang = d.lang || lang; role = d.role || role; scale = d.scale || 1;
+        document.documentElement.style.setProperty("--scale", scale);
+        setFonts(); setEditable(body.classList.contains("edit-on")); apply();
+        toast("استُرجعت النسخة ✓");
+      } catch(err){ toast("الملف غير صالح"); }
+    };
+    r.readAsText(f);
+    e.target.value = "";
+  };
+
+  $("reset").onclick = function(){
+    if (!confirm("سيُمسح كل تعديلاتك وترجع السيرة للأصل. متأكد؟")) return;
+    pAr.innerHTML = original.ar;
+    pEn.innerHTML = original.en;
+    try { localStorage.removeItem(KEY); } catch(e){}
+    scale = 1; document.documentElement.style.setProperty("--scale", 1);
+    setEditable(body.classList.contains("edit-on"));
+    apply();
+    toast("رجعت للأصل");
+  };
+
+  $("print").onclick = function(){ save(true); window.print(); };
+
+  /* ═══ الإقلاع ═══ */
+  restore();
+  setFonts();
+  document.documentElement.style.setProperty("--scale", scale);
+  setEditable(true);
+  apply();
+})();
 </script>
-
 </body>
 </html>
